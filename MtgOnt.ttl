@@ -1,0 +1,79 @@
+#@prefix : <> . Need to add a prefix for this namespace after setting up the namespace.
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+# @base <> . Once again, must create a namespace as the base of the ontology
+
+
+
+
+########
+#Classes
+########
+
+:0000001 
+  a owl:Class ;
+  rdfs:subClassOf obo:BFO_00000004 ;
+  rdfs:label "MTG Object"@en ;
+  skos:prefLabel "Object"@en ;
+  skos:definition "An MTG object is an independent continuant which is either an ability on the stack, a card, a copy of a card, a token, a spell, a permanent, or an emblem."@en ;
+  skos:note "This class is, of necessity, a defined class." ;
+.
+
+:0000002
+  a owl:Class ;
+  rdfs:subClassOf cco:Agent ;
+  rdfs:label "MTG Player"@en ;
+  skos:prefLabel "Player"@en ;
+  skos:definition "An MTG player is an agent who is playing a game of Magic: the Gathering."@en ;
+  skos:note "Players are often referred to in card text and can be targeted by certain effects. Thus, this term is not intended to refer to players in the colloquial sense of 'individual who sometimes plays such-and-such a game." ;
+.
+
+:0000003
+  a owl:Class;
+  rdfs:subClassOf obo:BFO_0000029 ;
+  rdfs:label "MTG Zone"@en ;
+  skos:prefLabel "Zone"@en ;
+  skos:definition "A zone is a site where objects can be during a game."@en ;
+  skos:note "The zone classes in MTG are library, hand, stack, battlefield, graveyard, exile, command, and ante." ;
+.
+
+:0000004
+  a owl:Class ;
+  rdfs:subClassOf obo:BFO_0000015 ;
+  rdfs:Label "MTG Game"@en ;
+  skos:prefLabel "Game"@en ;
+  skos:definition "A MTG game is a process that consists of players taking turns until one player wins the game"@en ;
+  skos:note "this is a super loose definition, and this class should probably be subsumed under a more specific class, 'game', rather than BFO's process class. That, however, is beyond the scope of this project, and if you are unsure as to why, go read Wittgenstein or any philosophy of games." ;
+.
+
+:0000005
+  a owl:Class ;
+  rdfs:subClassOf obo:BFO_0000015 ;
+  rdfs:Label "MTG Game Action" @en ;
+  skos:prefLabel "Action"@en ;
+  skos: altLabel "Game Action"@en ;
+.
+
+:0000006
+  a owl:Class ;
+  rdfs:subClassOf obo:BFO_0000015 ;
+  rdfs:label "MTG Turn Process"@en ;
+.
+
+:0000007
+  a owl:Class ;
+  rdfs:subClassOf :0000001;
+  rdfs:label "Ability on the stack"@en ;
+.
+
+
+##################
+#Object Properties
+##################
+
