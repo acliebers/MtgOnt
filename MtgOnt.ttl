@@ -68,9 +68,123 @@
 
 :0000007
   a owl:Class ;
-  rdfs:subClassOf :0000001;
+  rdfs:subClassOf :0000001 ;
   rdfs:label "Ability on the stack"@en ;
 .
+  
+:0000008
+  a owl:Class ;
+  rdfs:subClassOf :0000001 ;
+  rdfs:label "MTG Card"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Card"@en ;
+.
+
+:0000009
+  a owl:Class ;
+  rdfs:subClassOf :0000001 ; 
+  rdfs:label "Copy of a MTG card" ;
+  skos:definition ""@en ;
+.
+
+:0000010
+  a owl:Class ;
+  rdfs:subClassOf :0000001 ;
+  rdfs:label "MTG Token" ;
+  skos:definition ""@en ;
+  skos:prefLabel "Token"@en ;
+.
+
+:0000011
+  a owl:Class ;
+  rdfs:subClassOf :0000001 ;
+  rdfs:label "MTG Spell"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Spell"@en ;
+.
+
+:0000012
+  a owl:Class ;
+  rdfs:subClassOf :0000001 ;
+  rdfs:label "MTG Permanent"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Permanent"@en ;
+.
+
+:0000013
+  a owl:Class ;
+rdfs:subClassOf :0000001 ;
+rdfs:label "MTG Emblem" ;
+skos:definition ""@en ;
+skos:prefLabel "Emblem"@em ;
+.
+
+:0000014
+  a owl:Class ;
+  rdfs:subClassOf :0000003 ;
+  rdfs:label "MTG Library Zone"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Library"@en ;
+.
+
+:0000015
+  a owl:Class ;
+  rdfs:subClassOf :0000003 ;
+  rdfs:label "MTG Hand Zone"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Hand"@en ;
+.
+
+:0000016
+  a owl:Class ;
+  rdfs:subClassOf :0000003 ;
+  rdfs:label "MTG Battlefield Zone"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Battlefield"@en ;
+.
+
+:0000017
+  a owl:Class ;
+  rdfs:subClassOf :0000003 ;
+  rdfs:label "MTG Graveyard Zone"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Graveyard"@en ;
+.
+
+:0000018
+  a owl:Class ;
+  rdfs:subClassOf :0000003 ;
+  rdfs:label "MTG Exile Zone"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Exile"@en ;
+.
+
+:0000019
+  a owl:class ;
+  rdfs:subClassOf :0000003 ;
+  rdfs:label "MTG Stack Zone"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Stack"@en ;
+.
+
+:0000020
+  a owl:Class ;
+  rdfs:subClassOf :0000003 ;
+  rdfs:label "MTG Command Zone"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Command Zone"@en ;
+  skos:altLabel "Command" @en ;
+.
+
+:0000021
+  a owl:Class ;
+  rdfs:subClassOf :0000003 ;
+  rdfs:label "MTG Ante Zone"@en ;
+  skos:definition ""@en ;
+  skos:prefLabel "Ante Zone"@en ;
+  skos:note "The ante zone does not get used much, and probably only still exists in the rules because certain cards from early on in the game's history make reference to it" ;
+.
+
 
 
 ##################
