@@ -76,6 +76,7 @@
   
 :0000008
   a owl:Class ;
+  owl:disjointWith :0000010 ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "MTG Card"@en ;
   skos:definition "A card is an object with a name, mana cost, illustration, color indicator, type line, expansion symbol, text box, power and toughness, loyalty, defense, hand modifier, life modifier, illustration credit, legal text, and collector number."@en ;
@@ -92,6 +93,7 @@
 
 :0000010
   a owl:Class ;
+  owl:disjointWith :0000008 ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "MTG Token" ;
   skos:definition "A token is a permanent that isn't a card."@en ;
@@ -110,7 +112,11 @@
 
 :0000012
   a owl:Class ;
-  rdfs:subClassOf :0000001 ;
+  rdfs:subClassOf :0000001 ,
+    [rdf:type owl:Restriction ;
+              owl:onProperty obo:RO_0001025 ;
+              owl:allValuesFrom :0000016
+    ] ,
   rdfs:label "MTG Permanent"@en ;
   skos:definition "A permanent is a card or token that is on the battlefield."@en ;
   skos:prefLabel "Permanent"@en ;
