@@ -9,5 +9,6 @@ Definitions (and axioms) are derived from Magic's comprehensive Rules with an ey
 
 However, there is a concern in the offing which is worth considering. As much of the complexity of strategy games like Magic derives from complex interactions of cards on the basis of their encoding rules information, we must be careful to choose when and where it is important or permissible to engage in this simplification, and where it is important to allow the complexity of Magic's robust rules system to demand complexity of the MtgOnt. 
  
-
+#Use of MtgOnt
+As MtgOnt is extended from BFO and CCO (in the sense that all of the highest-level classes of MtgOnt are subclasses of classes asserted in BFO or CCO), it should be implemented only with BFO and CCO imported. A MEREOT containing necessary terms from both ontologies will be added to this repo at some point. 
 
