@@ -23,6 +23,7 @@
   skos:prefLabel "Object"@en ;
   skos:definition "An MTG object is an independent continuant which is either an ability on the stack, a card, a copy of a card, a token, a spell, a permanent, or an emblem."@en ;
   skos:note "This class is, of necessity, a defined class." ;
+  skos:note "CR 109.1" ;
 .
 
 :0000002
@@ -41,6 +42,7 @@
   skos:prefLabel "Zone"@en ;
   skos:definition "A zone is a site where objects can be during a game."@en ;
   skos:note "The zone classes in MTG are library, hand, stack, battlefield, graveyard, exile, command, and ante." ;
+  skos:note "this term should indicate a more general zone term for a mid-level games or card games ontology" ;
 .
 
 :0000004
@@ -76,47 +78,52 @@
   a owl:Class ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "MTG Card"@en ;
-  skos:definition ""@en ;
+  skos:definition "A card is an object with a name, mana cost, illustration, color indicator, type line, expansion symbol, text box, power and toughness, loyalty, defense, hand modifier, life modifier, illustration credit, legal text, and collector number."@en ;
   skos:prefLabel "Card"@en ;
+  skos:note "CR 200.1" ;
 .
 
 :0000009
   a owl:Class ;
   rdfs:subClassOf :0000001 ; 
-  rdfs:label "Copy of a MTG card" ;
-  skos:definition ""@en ;
+  rdfs:label "Copy" ;
+  skos:definition "A Copy is an object whose characteristics are determined by some other object's characteristics, as chosen by a player in casting a spell, activating an ability, or resolving an effect."@en ;
 .
 
 :0000010
   a owl:Class ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "MTG Token" ;
-  skos:definition ""@en ;
+  skos:definition "A token is a permanent that isn't a card."@en ;
   skos:prefLabel "Token"@en ;
+  skos:note "CR 111.1" ;
 .
 
 :0000011
   a owl:Class ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "MTG Spell"@en ;
-  skos:definition ""@en ;
+  skos:definition "A spell is a card or token that is on the stack."@en ;
   skos:prefLabel "Spell"@en ;
+  skos:note "CR 112.1" ;
 .
 
 :0000012
   a owl:Class ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "MTG Permanent"@en ;
-  skos:definition ""@en ;
+  skos:definition "A permanent is a card or token that is on the battlefield."@en ;
   skos:prefLabel "Permanent"@en ;
+  skos:note "CR 110.1" ;
 .
 
 :0000013
   a owl:Class ;
 rdfs:subClassOf :0000001 ;
 rdfs:label "MTG Emblem" ;
-skos:definition ""@en ;
+skos:definition "An Emblem is an object that has one or more abilities, but no other characteristics."@en ;
 skos:prefLabel "Emblem"@em ;
+skos:note "CR 114.1" ;
 .
 
 :0000014
