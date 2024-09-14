@@ -72,14 +72,16 @@
   a owl:Class ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "Ability on the stack"@en ;
+  skos:definition "An ability on the stack is an object which..."@en ;
 .
-  
+
 :0000008
   a owl:Class ;
   owl:disjointWith :0000010 ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "MTG Card"@en ;
-  skos:definition "A card is an object with a name, mana cost, illustration, color indicator, type line, expansion symbol, text box, power and toughness, loyalty, defense, hand modifier, life modifier, illustration credit, legal text, and collector number."@en ;
+  skos:definition "A card is an object which bears name, mana cost, illustration, color indicator, type line, expansion symbol, text box, power and toughness, loyalty, defense, hand modifier, life modifier, illustration credit, legal text, and collector number information."@en ;
+  skos:altLabel "Magic Card"@en ;
   skos:prefLabel "Card"@en ;
   skos:note "CR 200.1" ;
 .
