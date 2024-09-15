@@ -66,6 +66,8 @@
   a owl:Class ;
   rdfs:subClassOf obo:BFO_0000015 ;
   rdfs:label "MTG Turn Process"@en ;
+  skos:definition ""@en ;
+  skos:note "" ;
 .
 
 :0000007
@@ -107,7 +109,7 @@
   a owl:Class ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "MTG Spell"@en ;
-  skos:definition "A spell is a card that is on the stack."@en ;
+  skos:definition "A spell is a card (or a copy of a card) that is on the stack."@en ;
   skos:prefLabel "Spell"@en ;
   skos:note "CR 112.1" ;
 .
@@ -138,66 +140,75 @@ skos:note "CR 114.1" ;
   a owl:Class ;
   rdfs:subClassOf :0000003 ;
   rdfs:label "MTG Library Zone"@en ;
-  skos:definition ""@en ;
+  skos:definition "A library is a zone in which a player's deck is placed in a face-down pile during a game."@en ;
   skos:prefLabel "Library"@en ;
+  skos:note "CR 401" ;
 .
 
 :0000015
   a owl:Class ;
   rdfs:subClassOf :0000003 ;
   rdfs:label "MTG Hand Zone"@en ;
-  skos:definition ""@en ;
+  skos:definition "A hand zone is a zone in which a player holds any cards they have drawn."@en ;
   skos:prefLabel "Hand"@en ;
+  skos:note "CR 402" ;
 .
 
 :0000016
   a owl:Class ;
   rdfs:subClassOf :0000003 ;
   rdfs:label "MTG Battlefield Zone"@en ;
-  skos:definition ""@en ;
+  skos:definition "The battlefield is the zone where permanents exist."@en ;
   skos:prefLabel "Battlefield"@en ;
+  skos:note "CR 403" ;
 .
 
 :0000017
   a owl:Class ;
   rdfs:subClassOf :0000003 ;
   rdfs:label "MTG Graveyard Zone"@en ;
-  skos:definition ""@en ;
+  skos:definition "A graveyard zone is a zone where objects owned by one player are placed on top of any objects already in that player's graveyard zone when they are countered, discarded, destroyed, milled, or sacrificed, or, in the case of instants and sorcery spells, after they resolve."@en ;
   skos:prefLabel "Graveyard"@en ;
+  skos:note "CR 404" ;
 .
 
 :0000018
   a owl:Class ;
   rdfs:subClassOf :0000003 ;
   rdfs:label "MTG Exile Zone"@en ;
-  skos:definition ""@en ;
+  skos:definition "The exile zone is a zone where objects can be placed."@en ;
   skos:prefLabel "Exile"@en ;
+  skos:note "CR 406" ;
 .
 
 :0000019
   a owl:class ;
   rdfs:subClassOf :0000003 ;
   rdfs:label "MTG Stack Zone"@en ;
-  skos:definition ""@en ;
+  skos:definition "The stack is a zone where cards and abilities are placed on top of each other in the order in which they are cast, activated, or triggered, and resolved in reverse order."@en ;
   skos:prefLabel "Stack"@en ;
+  skos:note "CR 408" ;
 .
 
 :0000020
   a owl:Class ;
   rdfs:subClassOf :0000003 ;
   rdfs:label "MTG Command Zone"@en ;
-  skos:definition ""@en ;
+  skos:definition "The command zone is a zone reserved for certain specialized objects that have an overarching effect on the game, yet are not permanents and cannot be destroyed."@en ;
   skos:prefLabel "Command Zone"@en ;
   skos:altLabel "Command" @en ;
+  skos:note "CR 408" ;
+  skos:note "The definition of this term may need to be tinkered with." ;
 .
 
 :0000021
   a owl:Class ;
   rdfs:subClassOf :0000003 ;
   rdfs:label "MTG Ante Zone"@en ;
-  skos:definition ""@en ;
+  skos:definition "The ante zone is a zone that, after determining which player goes first but before drawing any cards, each player places one random card from their deck into, when playing for ante. The winner of the game becomes owner of any cards in the ante zone."@en ;
   skos:prefLabel "Ante Zone"@en ;
-  skos:note "The ante zone does not get used much, and probably only still exists in the rules because certain cards from early on in the game's history make reference to it" ;
+  skos:note "The ante zone does not get used much, is considered an optional rule, and probably only still exists in the rules because certain cards from early on in the game's history make reference to it" ;
+  skos:note "CR 407" ;
 .
 
 
