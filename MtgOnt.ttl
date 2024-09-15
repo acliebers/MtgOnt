@@ -107,7 +107,7 @@
   a owl:Class ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "MTG Spell"@en ;
-  skos:definition "A spell is a card or token that is on the stack."@en ;
+  skos:definition "A spell is a card that is on the stack."@en ;
   skos:prefLabel "Spell"@en ;
   skos:note "CR 112.1" ;
 .
