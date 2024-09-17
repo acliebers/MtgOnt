@@ -50,7 +50,7 @@
   rdfs:subClassOf obo:BFO_0000015 ;
   rdfs:Label "MTG Game"@en ;
   skos:prefLabel "Game"@en ;
-  skos:definition "A MTG game is a process that consists of players taking turns until one player wins the game"@en ;
+  skos:definition "A MTG game is a process that consists of players taking turns until a player(s) wins the game."@en ;
   skos:note "this is a super loose definition, and this class should probably be subsumed under a more specific class, 'game', rather than BFO's process class. That, however, is beyond the scope of this project, and if you are unsure as to why, go read Wittgenstein or any philosophy of games." ;
 .
 
@@ -60,6 +60,8 @@
   rdfs:Label "MTG Game Action" @en ;
   skos:prefLabel "Action"@en ;
   skos: altLabel "Game Action"@en ;
+  skos:definition "A game action is a process with at least a player and an object as participants, which has as its output a changed game state."@en ;
+  skos:note "(Elucidation) Game actions should include things like casting spells, playing lands, activating abilities, resolving spells or abilities, drawing a card, tapping sources for mana, declaring attackers, and declaring blockers." ;
 .
 
 :0000006
@@ -224,8 +226,7 @@ skos:note "CR 114.1" ;
   a owl:Class ;
   rdfs:subClassOf cco:InformationContentEntity ; 
   rdfs:label "MTG Object Characteristic" ;
-  skos:definition "A characteristic is any one of the following Information Content Entities that can be borne by an MTG object: name, mana cost, color, color indicator, card type, subtype,
-supertype, rules text, abilities, power, toughness, loyalty, defense, hand modifier, and life modifier."@en ;
+  skos:definition "A characteristic is any one of the following Information Content Entities that can be borne by an MTG object: name, mana cost, color, color indicator, card type, subtype, supertype, rules text, abilities, power, toughness, loyalty, defense, hand modifier, and life modifier."@en ;
   skos:prefLabel "Characteristic"@en ;
   skos:note "CR 109.3" ;
   skos:note "I can see problems with this and with copies, at least, because while characteristics do seem obviously to be information entities (as the Comprehensive Rules insist) it is difficult to see how some characteristics have a generic dependence relation to the appropriate object when some objects are only imagined by players." ;
