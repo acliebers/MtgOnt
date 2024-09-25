@@ -229,6 +229,7 @@ skos:note "During a game, emblems exist in the command zone (CR 114.2)" ;
   rdfs:subClassOf cco:InformationContentEntity ; 
   rdfs:label "MTG Object Characteristic" ;
   skos:definition "A characteristic is any one of the following Information Content Entities that can be borne by an MTG object: name, mana cost, color, color indicator, card type, subtype, supertype, rules text, abilities, power, toughness, loyalty, defense, hand modifier, and life modifier."@en ;
+  skos:altLabel "Object Characteristic"@en ;
   skos:prefLabel "Characteristic"@en ;
   skos:note "CR 109.3" ;
   skos:note "I can see problems with this and with copies, at least, because while characteristics do seem obviously to be information entities (as the Comprehensive Rules insist) it is difficult to see how some characteristics have a generic dependence relation to the appropriate object when some objects are only imagined by players." ;
@@ -238,27 +239,36 @@ skos:note "During a game, emblems exist in the command zone (CR 114.2)" ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG name"@en ;
+  skos:definition "A name is an object characteristic whose information content is some word or phrase which refers to the object either in virtue of being printed in the top left corner of the card or determined by some ability or effect which brings the object into existence or changes its name."@en ;
   skos:prefLabel "Name"@en ;
+  skos:note "A clumsy definition, but remember: cards have names printed on them, some cards can become copies or clones of other cards, and tokens are all created with a name (which is the same as their creature types in most cases)." ; 
 .
 
 :0000025
 a owl:Class ;
 rdfs:subClassOf :0000023 ;
 rdfs:label "MTG Mana Cost"@en ;
+skos:definition "A mana cost is an object characteristic whose information content is the amount and color of mana required to play the object from a player's hand."@en ;
 skos:prefLabel "Mana Cost"@en ;
+skos:note "mana cost also determines the color(s) of a card, as well as whether it is mono- or multicolored." ;
+skos:note "there is a question of whether it should be described as playing an object/card or casting a spell/object/card." ;
 .
 
 :0000026 
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Color"@en ;
+  skos:definition "A color is an object characteristic determined by the object's mana cost or color indicator, whose information content is at least one of either White, Green, Red, Black, Blue, or Colorless."@en ;
   skos:prefLabel "Color"@en ;
+  skos:note "Need to check on the status of Colorless as an object's color. This may be a tricky issue." ;
+  skos:note "Not sure whether to include a corresponding quality class." ;
 .
 
 :0000027 
   a owl:Class ;
 rdfs:subClassOf :0000023 ;
 rdfs:label "MTG Color Indicator"@en ;
+skos:definition "A Color Indicator is an object characteristic whose information content is the color(s) of the object."@en ;
 skos:prefLabel "Color Indicator"@en ;
 .
 
@@ -266,6 +276,7 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Card Type"@en ;
+  skos:definition "A card type is an object characteristic whose information content is "@en ;
   skos:prefLabel "Card Type"@en ;
 .
 
@@ -273,6 +284,7 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Card Subtype"@en ;
+  skos:definition "A card subtype is an object characteristic whose information content is..."@en ;
   skos:prefLabel "Card Subtype"@en ;
 .
 
@@ -281,12 +293,14 @@ skos:prefLabel "Color Indicator"@en ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Card Supertype"@en ;
   skos:prefLabel "Card Supertype"@en ;
+  skos:definition "A card supertype is an object characteristic whose information content is..."@en ;
 .
 
 :0000031 
    a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Object Rules Text"@en ;
+  skos:definition "Rules text is "@en ;
   skos:prefLabel "Rules Text"@en ;
 .
 
@@ -301,6 +315,7 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Power"@en ;
+  skos:definition "Power is an object characteristic which determines how much damage a creature deals in combat."@en ;
   skos:prefLabel "Power"@en ;
 .
 
@@ -308,6 +323,7 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Toughness"@en ;
+  skos:definition "Toughness is an object characteristic which determines how much damage a creature can sustain before it is destroyed."@en ;
   skos:prefLabel "Toughness"@en ;
 .
 
@@ -315,6 +331,7 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Loyalty"@en ;
+  skos:definition "Loyalty is an object characteristic which determines how many loyalty counters a planeswalker comes into play with."@en ;
   skos:prefLabel "Loyalty"@en ;
 .
 
@@ -376,7 +393,7 @@ skos:prefLabel "Color Indicator"@en ;
 
 :0000044
   a owl:Class ;
-  rdfs:subClassOf
+  rdfs:subClassOf :00000
 
 ##################
 #Object Properties
