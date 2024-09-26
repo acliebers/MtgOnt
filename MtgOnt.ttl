@@ -123,7 +123,7 @@
     [rdf:type owl:Restriction ;
               owl:onProperty obo:RO_0001025 ;
               owl:allValuesFrom :0000016
-    ] ,
+    ] ;
   rdfs:label "MTG Permanent"@en ;
   skos:definition "A permanent is a card or token that is on the battlefield."@en ;
   skos:prefLabel "Permanent"@en ;
@@ -298,7 +298,12 @@ skos:prefLabel "Color Indicator"@en ;
 
 :0000031 
    a owl:Class ;
-  rdfs:subClassOf :0000023 ;
+  owl:disjointWith :0000045 ;
+  rdfs:subClassOf :0000023 ,
+    [rdf:type owl:Restriction ;
+              owl:onProperty obo:BFO_0000176 ;
+              owl:SomeValuesFrom :0000044
+    ] ;
   rdfs:label "MTG Object Rules Text"@en ;
   skos:definition "Rules text is "@en ;
   skos:prefLabel "Rules Text"@en ;
@@ -393,7 +398,25 @@ skos:prefLabel "Color Indicator"@en ;
 
 :0000044
   a owl:Class ;
-  rdfs:subClassOf :00000
+  rdfs:subClassOf cco:InformationContentEntity ;
+  rdfs:label "MTG Text Box"@en ;
+  skos:definition "A text box is an information content entity whose content is the sum of any rules text or flavor text on an object."@en ;
+  skos:prefLabel "Text Box"@en ;
+.
+
+:0000045 
+  a owl:Class ;
+  owl:disjointWith 0000031 ;
+  rdfs:subClassOf cco:InformationContentEntity ,
+          [rdf:type owl:Restriction ;
+              owl:onProperty obo:BFO_0000176 ;
+              owl:SomeValuesFrom :0000044
+    ] ;
+  rdfs:label "MTG Flavor Text"@en ;
+  skos:definition "Flavor text is an information content entity whose content is italicized text which has no game-mechanical effect."@en ;
+  skos:prefLabel "Flavor Text"@en ;
+.
+  
 
 ##################
 #Object Properties
