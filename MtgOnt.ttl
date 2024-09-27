@@ -276,7 +276,7 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Card Type"@en ;
-  skos:definition "A card type is an object characteristic whose information content is "@en ;
+  skos:definition "A card type is an object characteristic whwhich is part of a card's type line and which..."@en ;
   skos:prefLabel "Card Type"@en ;
 .
 
@@ -305,7 +305,7 @@ skos:prefLabel "Color Indicator"@en ;
               owl:SomeValuesFrom :0000044
     ] ;
   rdfs:label "MTG Object Rules Text"@en ;
-  skos:definition "Rules text is "@en ;
+  skos:definition "Rules text is an object characteristic which "@en ;
   skos:prefLabel "Rules Text"@en ;
 .
 
@@ -344,14 +344,18 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Hand Modifier"@en ;
+  skos:definition "A hand modifier is an object characteristic of a Vanguard card which alters its owner's starting hand size and maximum hand size at the start of a Vanguard game."@en ;
   skos:prefLabel "Hand Modifier"@en ;
+  skos:note "CR 313.6" ;
 .
 
 :0000037 
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Life Modifier"@en ;
+  skos:definition "A life modifier is an object characteristic of a Vanguard card whch alters its owner's life total at the start of a Vanguard game."@en ;
   skos:prefLabel "Life Modifier"@en ;
+  skos:note "CR 313.7" ;
 . 
 
 :0000038 
@@ -413,11 +417,22 @@ skos:prefLabel "Color Indicator"@en ;
               owl:SomeValuesFrom :0000044
     ] ;
   rdfs:label "MTG Flavor Text"@en ;
-  skos:definition "Flavor text is an information content entity whose content is italicized text which has no game-mechanical effect."@en ;
+  skos:definition "Flavor text is an information content entity whose content is italicized text which serves merely to add artistic appeal to the game."@en ;
   skos:prefLabel "Flavor Text"@en ;
+  skos:note "CR 207.2b" ;
 .
-  
 
+:0000046 
+  a owl:Class ;
+  rdfs:subClassOf cco:InformationContentEntity ,
+          [rdf:type owl:Restriction ;
+              owl:onProperty obo:BFO_0000176 ;
+              owl:someValuesFrom :0000044
+    ] ;
+  rdfs:label "MTG Reminder Text"@en ;
+  skos:definition "Reminder text is an information content entity whose content is italicized text which serves as a reminder for what certain keywords and other technical Magic-related terms mean."@en ;
+  skos:note "CR 207.2" ;
+.
 ##################
 #Object Properties
 ##################
