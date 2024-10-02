@@ -75,8 +75,10 @@
 :0000007
   a owl:Class ;
   rdfs:subClassOf :0000001 ;
-  rdfs:label "Ability on the stack"@en ;
-  skos:definition "An ability on the stack is an object which..."@en ;
+  rdfs:label "Ability Object"@en ;
+  skos:definition "An ability object is an object in the stack zone which bears a prescriptive information content entity that prescribes some future game state once the ability is resolved."@en ;
+  skos:altLabel "Ability on the stack"@en ;
+  skos:altLabel "Ability"@en ;
 .
 
 :0000008
