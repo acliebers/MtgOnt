@@ -31,7 +31,7 @@
   rdfs:subClassOf cco:Agent ;
   rdfs:label "MTG Player"@en ;
   skos:prefLabel "Player"@en ;
-  skos:definition "An MTG player is an agent who is playing a game of Magic: the Gathering."@en ;
+  skos:definition "A MTG player is an agent realizing a player role in a game of Magic: the Gathering."@en ;
   skos:note "Players are often referred to in card text and can be targeted by certain effects. Thus, this term is not intended to refer to players in the colloquial sense of 'individual who sometimes plays such-and-such a game." ;
 .
 
@@ -364,6 +364,7 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000029
   rdfs:label "MTG Creature Subtype"@en ;
+  skos:definition "A creature type is an object characteristic which is a part of an object's type line and which determines whether and how that object can be targeted or affected by spells and abilities."@en ;
   skos:prefLabel "Creature Type"@en ;
 .
 
@@ -371,6 +372,7 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000029 
   rdfs:label "MTG Land Subtype"@en ;
+  skos:definition "A Land type is an object characteristic which is part of an object's type line and which determines what color of mana that land can produce in addition to whether and how that object can be targeted or affected by spells and abilities."@en ;
   skos:prefLabel "Land Type"@en ;
 . 
 
@@ -379,6 +381,7 @@ skos:prefLabel "Color Indicator"@en ;
   rdfs:subClassOf :0000029 ;
   rdfs:label "MTG Enchantment Subtype"@en ;
   skos:prefLabel "Enchantment Type"@en ;
+  skos:definition "An enchantment type is an object characteristic which is part of an object's type line and which determines various game-mechanical functions of the object in addition to whether and how that object can be targeted or affected by spells and abilities."@en ;
 .
 
 :0000041
