@@ -76,7 +76,7 @@
   a owl:Class ;
   rdfs:subClassOf :0000001 ;
   rdfs:label "Ability Object"@en ;
-  skos:definition "An ability object is an object in the stack zone which bears a prescriptive information content entity that prescribes some future game state once the ability is resolved."@en ;
+  skos:definition "An ability object is an object in the stack zone whose only object characteristic is a text box containing object ability information."@en ;
   skos:altLabel "Ability on the stack"@en ;
   skos:altLabel "Ability"@en ;
 .
@@ -278,7 +278,7 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Card Type"@en ;
-  skos:definition "A card type is an object characteristic whwhich is part of a card's type line and which..."@en ;
+  skos:definition "A card type is an object characteristic whwhich is part of a card's type line and which determines several aspects of how that card can interact with the rules of the game."@en ;
   skos:prefLabel "Card Type"@en ;
 .
 
@@ -307,15 +307,17 @@ skos:prefLabel "Color Indicator"@en ;
               owl:SomeValuesFrom :0000044
     ] ;
   rdfs:label "MTG Object Rules Text"@en ;
-  skos:definition "Rules text is an object characteristic which "@en ;
+  skos:definition "Rules text is an object characteristic which is part of an object's text box and which has game-mechanical effect(s)."@en ;
   skos:prefLabel "Rules Text"@en ;
 .
 
 :0000032 
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
-  rdfs:label "MTG object Ability Information"@en ;
+  rdfs:label "MTG Object Ability Information"@en ;
+  skos:definition "Object ability information is an object characteristic which is some portion of its rules text, delineated from other portions by a paragraph break."@en ;
   skos:prefLabel "Ability"@en ;
+  skos:note "Not sure whether this should strictly be a subclass of :0000023 or whether it should simply be a part of a text box." ;
 .
 
 :0000033 
