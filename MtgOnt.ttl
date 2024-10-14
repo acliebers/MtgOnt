@@ -127,19 +127,27 @@
               owl:allValuesFrom :0000016
     ] ;
   rdfs:label "MTG Permanent"@en ;
-  skos:definition "A permanent is a card or token that is on the battlefield."@en ;
+  skos:definition "A permanent is an object that is on the battlefield."@en ;
   skos:prefLabel "Permanent"@en ;
   skos:note "CR 110.1" ;
 .
 
 :0000013
   a owl:Class ;
-rdfs:subClassOf :0000001 ;
+rdfs:subClassOf :0000001 ,
+    [rdf:type owl:Restriction ;
+              owl:onProperty obo:RO_0001025 ;
+              owl:allValuesFrom :0000020
+    ] ,
+    [rdf:type owl:Restriction ;
+              owl:onProperty obo:BFO_0000101 ;
+              owl:allValuesFrom :0000032
+    ] ;
 rdfs:label "MTG Emblem" ;
 skos:definition "An Emblem is an object that has one or more abilities, but no other characteristics."@en ;
 skos:prefLabel "Emblem"@em ;
 skos:note "CR 114.1" ;
-skos:note "During a game, emblems exist in the command zone (CR 114.2)" ;
+skos:note "During a game, emblems exist in the command zone (CR 114.2). This is why the first class restriction exists." ;
 .
 
 :0000014
