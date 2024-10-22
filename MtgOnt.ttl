@@ -1,4 +1,4 @@
-#@prefix : <> . Need to add a prefix for this namespace after setting up the namespace.
+# @prefix : <> . Need to add a prefix for this namespace after setting up the namespace.
 @prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
