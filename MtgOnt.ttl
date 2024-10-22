@@ -196,7 +196,7 @@ skos:note "During a game, emblems exist in the command zone (CR 114.2). This is 
 .
 
 :0000019
-  a owl:class ;
+  a owl:Class ;
   rdfs:subClassOf :0000003 ;
   rdfs:label "MTG Stack Zone"@en ;
   skos:definition "The stack is a zone where cards and abilities are placed on top of each other in the order in which they are cast, activated, or triggered, and resolved in reverse order."@en ;
