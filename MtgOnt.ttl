@@ -227,7 +227,7 @@ skos:note "During a game, emblems exist in the command zone (CR 114.2). This is 
 
 :0000022 
   a owl:Class ;
-  rdfs:subClassOf ??? ;
+  rdfs:subClassOf obo:BFO_0000001 ;
   rdfs:label "MTG Mana"@en ;
   skos:definition "Mana is a..."@en ;
   skos:prefLabel "Mana"@en ;
