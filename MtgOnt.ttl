@@ -59,7 +59,7 @@
   rdfs:subClassOf obo:BFO_0000015 ;
   rdfs:Label "MTG Game Action" @en ;
   skos:prefLabel "Action"@en ;
-  skos: altLabel "Game Action"@en ;
+  skos:altLabel "Game Action"@en ;
   skos:definition "A game action is a process with at least a player and an object as participants, which has as its output a changed game state."@en ;
   skos:note "(Elucidation) Game actions should include things like casting spells, playing lands, activating abilities, resolving spells or abilities, drawing a card, tapping sources for mana, declaring attackers, and declaring blockers." ;
 .
