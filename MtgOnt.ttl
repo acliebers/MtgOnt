@@ -376,9 +376,9 @@ skos:prefLabel "Color Indicator"@en ;
 
 :0000038 
   a owl:Class ;
-  rdfs:subClassOf :0000029
+  rdfs:subClassOf :0000029 ;
   rdfs:label "MTG Creature Subtype"@en ;
-  skos:definition "A creature type is an object characteristic which is a part of an object's type line and which determines whether and how that object can be targeted or affected by spells and abilities."@en ;
+  skos:definition "A creature type is a card subtype which is a part of an object's type line and which determines whether and how that object can be targeted or affected by spells and abilities."@en ;
   skos:prefLabel "Creature Type"@en ;
 .
 
