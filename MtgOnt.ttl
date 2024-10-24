@@ -102,8 +102,16 @@
 
 :0000010
   a owl:Class ;
-  owl:disjointWith :0000008 ;
-  rdfs:subClassOf :0000001 ;
+  owl:disjointWith 
+        :0000011 ,
+        :0000008 ,
+        :0000007
+    ;
+  rdfs:subClassOf :0000001 ,
+    [rdf:type owl:Restriction ;
+              owl:onProperty rdf:type ;
+              owl:allValuesFrom :0000012
+    ] ;
   rdfs:label "MTG Token" ;
   skos:definition "A token is a permanent that isn't a card."@en ;
   skos:prefLabel "Token"@en ;
@@ -450,6 +458,7 @@ skos:prefLabel "Color Indicator"@en ;
     ] ;
   rdfs:label "MTG Reminder Text"@en ;
   skos:definition "Reminder text is an information content entity whose content is italicized text which serves as a reminder for what certain keywords and other technical Magic-related terms mean."@en ;
+  skos:prefLabel "Reminder Text"@en ;
   skos:note "CR 207.2" ;
 .
 
