@@ -84,13 +84,18 @@
 :0000008
   a owl:Class ;
   owl:disjointWith :0000010 ;
-  rdfs:subClassOf :0000001 ;
+  rdfs:subClassOf :0000001 ,
+      [rdf:type owl:Restriction ;
+              owl:onProperty obo:RO_0010002 ,
+              owl:someValuesFrom :0000023 
+    ] ;
   rdfs:label "MTG Card"@en ;
   skos:definition "A card is an object which bears name, mana cost, illustration, color indicator, type line, expansion symbol, text box, power and toughness, loyalty, defense, hand modifier, life modifier, illustration credit, legal text, and collector number information."@en ;
   skos:altLabel "Magic Card"@en ;
   skos:prefLabel "Card"@en ;
   skos:note "CR 200.1" ;
   skos:note "This is a problematic definition, enumerating the different kinds of information that can be borne by cards and making it sound as though all cards carry all of these. In particular, very few cards bear hand and life modifier information, because only specialized cards for a single format use those." ;
+  skos:note "The class restriction should eventually express in detail the characteristics and other ICEs that cards must bear vs the characteristics (and other ICEs?) which cards may bear." ;
 .
 
 :0000009
@@ -294,7 +299,7 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Card Type"@en ;
-  skos:definition "A card type is an object characteristic whwhich is part of a card's type line and which determines several aspects of how that card can interact with the rules of the game."@en ;
+  skos:definition "A card type is an object characteristic which is part of a card's type line and which determines several aspects of how that card can interact with the rules of the game."@en ;
   skos:prefLabel "Card Type"@en ;
 .
 
@@ -471,6 +476,66 @@ skos:prefLabel "Color Indicator"@en ;
   skos:prefLabel "Keyword Ability"@en ;
   skos:note "The keyword abilities as of 10/22/2024 are deathtouch, defender, double strike, enchant, equip, first strike, flash, flying, haste, hexproof, indestructible, intimidate, landwalk(!), lifelink, protection, reach, shroud, trample, vigilance, ward, banding, rampage, cumulative upkeep, flanking, phasing, buyback, shadow, cycling, echo, horsemanship, fading, kicker, multikicker, flashback, madness, fear, morph, megamorph, amplify, provoke, storm, affinity, entwine, modular, sunburst, bushido, soulshift, splice, offering, ninjutsu, epic, convoke, dredge, transmute, bloodthirst, haunt, replicate, forecast, graft, recover, ripple, split second, suspend, vanishing, absorb, aura swap, delve, fortify, frenzy, gravestorm, poisonous , transfigure, champion, changeling, evoke, hideaway, prowl, reinforce, conspire, persist, wither, retrace, devour, exalted, unearth, cascade, annihilator, level up, rebound, umbra armor, infect, battle cry, living weapon, undying, miracle, soulbond, overload, scavenge, unleash, cipher, evolve, extort, fuse, bestow, tribute, dethrone, hidden agenda, outlast, prowess, dash, exploit, menace, renown, awaken, devoid,  ingest, myriad, surge, skulk, emerge, escalate, melee, crew, fabricate, partner, undaunted, improvise, aftermath, embalm, eternalize, afflict, ascend, assist, jump-start, mentor, afterlife, riot, spectacle, escape, companion, mutate, encore, boast, foretell, demosnstrate, daybound, nightbound, disturb, decayed, cleave, training, compleated, reconfigure, blitz, casualty, enlist, read ahead, ravenous, squad, space sculptor, visit, prototype, living metal, ore than meets the eye, for mirrodin!, toxic, backup, bargain, craft, disguise, solved, plot, saddle, spree, freerunning, gift, offspring." ;
 .
+
+:0000048 
+  a owl:Class ;
+  rdfs:subClassOf cco:InformationContentEntity ;
+  rdfs:label "MTG Illustration Credit Information"@en ;
+  skos:prefLabel "Illustration Credit"@en ;
+.
+
+:0000049
+  a owl:Class ;
+  rdfs:subClassOf cco:InformationContentEntity ;
+  rdfs:label "MTG Legal Text Information"@en ;
+  skos:prefLabel "Legal Text"@en ;
+.
+
+:0000050 
+  a owl:Class ;
+  rdfs:subClassOf cco:InformationContentEntity ;
+  rdfs:label "MTG Collector Number Information"@en ;
+  skos:prefLabel "Collector Number"@en ;
+.
+
+:0000051
+  a owl:Class ;
+  rdfs:subClassOf cco:InformationContentEntity ; 
+  rdfs:label "MTG Illustration"@en ;
+  skos:prefLabel "Illustration"@en ;
+. 
+
+:0000052 
+  a owl:Class ;
+  rdfs:subClassOf obo:BFO_0000015 ;
+  rdfs:label "MTG Turn Phase"@en ;
+.
+
+:0000053 
+  a owl:Class ;
+  rdfs:subClassOf :0000052 ;
+  rdfs:label "MTG Beginning Phase"@en ;
+.
+
+:0000054 
+  a owl:Class ;
+  rdfs:subClassOf :0000052 ;
+  rdfs:label "MTG Main Phase"@en ;
+.
+
+:0000055 
+  a owl:Class ;
+  rdfs:subClassOf :0000052 ;
+  rdfs:label "MTG Combat Phase"@en ;
+.
+
+:0000056 
+  a owl:Class ;
+  rdfs:subClassOf :0000052 ;
+  rdfs:label "MTG Ending Phase"@en ;
+.
+  
+
 ##################
 #Object Properties
 ##################
