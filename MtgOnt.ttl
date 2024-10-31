@@ -507,8 +507,16 @@ skos:prefLabel "Color Indicator"@en ;
 
 :0000052 
   a owl:Class ;
-  rdfs:subClassOf obo:BFO_0000015 ;
+  rdfs:subClassOf obo:BFO_0000015 ,
+          [rdf:type owl:Restriction ;
+              owl:onProperty obo:RO_0002012 ;
+              owl:allValuesFrom :0000006 
+    ] ;
   rdfs:label "MTG Turn Phase"@en ;
+  skos:definition "A Turn Phase is a process that is an occurrent part of a Turn Process and is either a Beginning Phase, Main Phase, Combat Phase, or Ending Phase."@en ;
+  skos:note "CR 500.1" ;
+  skos:prefLabel "Phase"@en .
+  
 .
 
 :0000053 
@@ -535,6 +543,87 @@ skos:prefLabel "Color Indicator"@en ;
   rdfs:label "MTG Ending Phase"@en ;
 .
   
+:0000057 
+  a owl:Class ;
+  rdfs:subClassOf obo:BFO_0000015 ;
+  rdfs:label "MTG Step"@en ;
+  skos:definition "A step is a process that is a process part of a beginning, combat, or ending phase defined by the Comprehensive Rules."@en ;
+  skos:prefLabel "Step"@en ;
+  skos:note "CR 500.1" ;
+.
+
+:0000058
+  a owl:Class; 
+  rdfs:subClassOf :0000057 ;
+  rdfs:label "Untap Step"@en ;
+  skos:prefLabel "Untap Step"@en ;
+.
+
+:0000059 
+  a owl:Class ;
+  rdfs:subClassOf :0000057 ;
+  rdfs:label "Upkeep Step"@en ;
+  skos:altLabel "Upkeep"@en ;
+  skos:prefLabel "Upkeep Step"@en ;
+.
+
+:0000060
+  a owl:Class ;
+  rdfs:subClassOf :0000057 ;
+  rdfs:label "Draw Step"@en ;
+.
+
+:0000061 
+  a owl:Class ;
+  rdfs:subClassOf :0000057 ;
+  rdfs:label "Beginning of Combat Step"@en ;
+  skos:prefLabel "Beginning of Combat"@en ;
+.
+
+:0000062 
+  a owl:Class ;
+  rdfs:subClassOf :0000057 ;
+  rdfs:label "Declare Attackers Step"@en ;
+  skos:prefLabel "Declare Attackers"@en ;
+  .
+
+:0000063 
+  a owl:Class ;
+  rdfs:subClassOf :0000057 ;
+  rdfs:label "Declare Blockers Step"@en ;
+  skos:prefLabel "Declare Blockers"@en ;
+.
+
+:0000064 
+  a owl:Class ;
+  rdfs:subClassOf :0000057 ;
+  rdfs:label "Combat Damage Step"@en ;
+.
+
+:0000065
+  a owl:Class ;
+  rdfs:subClassOf :0000057 ;
+  rdfs:label "End of Combat Step"@en ;
+  skos:prefLabel "End of Combat"@en ;
+.
+
+:0000066 
+  a owl:Class ;
+  rdfs:subClassOf :0000057 ;
+  rdfs:label "End Step"@en ;
+.
+
+:0000067 
+  a owl:Class ;
+  rdfs:subClassOf :0000057  ;
+  rdfs:label "Cleanup Step"@en ;
+.
+
+:0000068 
+  a owl:Class; 
+  rdfs:subClassOf :0000005 ;
+  rdfs:label "Casting a Spell"@en ;
+.
 
 ##################
 #Object Properties
