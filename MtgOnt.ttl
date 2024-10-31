@@ -87,8 +87,8 @@
   rdfs:subClassOf :0000001 ,
       [rdf:type owl:Restriction ;
                 owl:onProperty obo:RO_0010002 ,
-                owl:someValuesFrom :0000023
-      ] ;
+                owl:someValuesFrom :0000023] 
+      ;
   rdfs:label "MTG Card"@en ;
   skos:definition "A card is an object which bears name, mana cost, illustration, color indicator, type line, expansion symbol, text box, power and toughness, loyalty, defense, hand modifier, life modifier, illustration credit, legal text, and collector number information."@en ;
   skos:altLabel "Magic Card"@en ;
