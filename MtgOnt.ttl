@@ -86,7 +86,7 @@
   owl:disjointWith :0000010 ;
   rdfs:subClassOf :0000001 ,
     [rdf:type owl:Restriction ;
-              owl:onProperty obo:RO_0010002 ,
+              owl:onProperty obo:RO_0010002 ;
               owl:someValuesFrom :0000023
     ] ;
   rdfs:label "MTG Card"@en ;
