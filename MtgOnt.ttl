@@ -94,7 +94,7 @@
   skos:altLabel "Magic Card"@en ;
   skos:prefLabel "Card"@en ;
   skos:note "CR 200.1" ;
-  skos:note "This is a problematic definition, enumerating the different kinds of information that can be borne by cards and making it sound as though all cards carry all of these. In particular, very few cards bear hand and life modifier information, because only specialized cards for a single format use those." ;
+  skos:note "This is a problematic definition, enumerating the different kinds of information that can be borne by cards and making it sound as though all cards carry all of these. In particular, very few cards bear hand and life modifier information, because only specialized cards for a single format use those. Also, a card has to be more than simply some object which bears this information. We should not allow things like human beings who memorize card information to count as cards because they bear the information." ;
   skos:note "The class restriction should eventually express in detail the characteristics and other ICEs that cards must bear vs the characteristics (and other ICEs?) which cards may bear." ;
 .
 
