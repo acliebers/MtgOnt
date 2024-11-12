@@ -625,6 +625,14 @@ skos:prefLabel "Color Indicator"@en ;
   rdfs:label "Casting a Spell"@en ;
 .
 
+:0000069 
+  a owl:Class ;
+  rdfs:subClassOf obo:BFO_0000027 ;
+  rdfs:label "MTG Deck"@en ;
+  skos:definition "A deck is a collection of Magic cards used to play Magic: The Gathering."@en ;
+  skos:prefLabel "Deck"@en ;
+  skos:note "Notably, decks for different formats have different deckbuilding restrictions." ;
+.
 ##################
 #Object Properties
 ##################
