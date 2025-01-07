@@ -28,7 +28,7 @@
 
 :0000002
   a owl:Class ;
-  rdfs:subClassOf cco:Agent ;
+  rdfs:subClassOf cco:ont00001017 ;
   rdfs:label "MTG Player"@en ;
   skos:prefLabel "Player"@en ;
   skos:definition "A MTG player is an agent realizing a player role in a game of Magic: the Gathering."@en ;
@@ -249,7 +249,7 @@ skos:note "During a game, emblems exist in the command zone (CR 114.2). This is 
 
 :0000023 
   a owl:Class ;
-  rdfs:subClassOf cco:InformationContentEntity ; 
+  rdfs:subClassOf cco:ont00000958 ; 
   rdfs:label "MTG Object Characteristic" ;
   skos:definition "A characteristic is any one of the following Information Content Entities that can be borne by an MTG object: name, mana cost, color, color indicator, card type, subtype, supertype, rules text, abilities, power, toughness, loyalty, defense, hand modifier, and life modifier."@en ;
   skos:altLabel "Object Characteristic"@en ;
@@ -334,7 +334,7 @@ skos:prefLabel "Color Indicator"@en ;
 
 :0000032 
   a owl:Class ;
-  rdfs:subClassOf cco:InformationContentEntity ,
+  rdfs:subClassOf cco:ont00000958 ,
     [rdf:type owl:Restriction ;
               owl:onProperty obo:BFO_0000176 ;
               owl:AllValuesFrom :0000031
@@ -434,7 +434,7 @@ skos:prefLabel "Color Indicator"@en ;
 
 :0000044
   a owl:Class ;
-  rdfs:subClassOf cco:InformationContentEntity ;
+  rdfs:subClassOf cco:ont00000958 ;
   rdfs:label "MTG Text Box"@en ;
   skos:definition "A text box is an information content entity whose content is the sum of any rules text or flavor text on an object."@en ;
   skos:prefLabel "Text Box"@en ;
@@ -443,7 +443,7 @@ skos:prefLabel "Color Indicator"@en ;
 :0000045 
   a owl:Class ;
   owl:disjointWith 0000031 ;
-  rdfs:subClassOf cco:InformationContentEntity ,
+  rdfs:subClassOf cco:ont00000958 ,
           [rdf:type owl:Restriction ;
               owl:onProperty obo:BFO_0000176 ;
               owl:SomeValuesFrom :0000044
@@ -456,7 +456,7 @@ skos:prefLabel "Color Indicator"@en ;
 
 :0000046 
   a owl:Class ;
-  rdfs:subClassOf cco:InformationContentEntity ,
+  rdfs:subClassOf cco:ont00000958 ,
           [rdf:type owl:Restriction ;
               owl:onProperty obo:BFO_0000176 ;
               owl:someValuesFrom :0000044
@@ -479,28 +479,28 @@ skos:prefLabel "Color Indicator"@en ;
 
 :0000048 
   a owl:Class ;
-  rdfs:subClassOf cco:InformationContentEntity ;
+  rdfs:subClassOf cco:ont00000958 ;
   rdfs:label "MTG Illustration Credit Information"@en ;
   skos:prefLabel "Illustration Credit"@en ;
 .
 
 :0000049
   a owl:Class ;
-  rdfs:subClassOf cco:InformationContentEntity ;
+  rdfs:subClassOf cco:ont00000958 ;
   rdfs:label "MTG Legal Text Information"@en ;
   skos:prefLabel "Legal Text"@en ;
 .
 
 :0000050 
   a owl:Class ;
-  rdfs:subClassOf cco:InformationContentEntity ;
+  rdfs:subClassOf cco:ont00000958 ;
   rdfs:label "MTG Collector Number Information"@en ;
   skos:prefLabel "Collector Number"@en ;
 .
 
 :0000051
   a owl:Class ;
-  rdfs:subClassOf cco:InformationContentEntity ; 
+  rdfs:subClassOf cco:ont00000958 ; 
   rdfs:label "MTG Illustration"@en ;
   skos:prefLabel "Illustration"@en ;
 . 
