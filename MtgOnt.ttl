@@ -43,6 +43,7 @@
   skos:definition "A zone is a site where objects can be during a game."@en ;
   skos:note "The zone classes in MTG are library, hand, stack, battlefield, graveyard, exile, command, and ante." ;
   skos:note "this term should indicate a more general zone term for a mid-level games or card games ontology" ;
+  skos:note "zones are defined not in terms of their spatial boundaries, but in terms of game-mechanical roles." ;
 .
 
 :0000004
@@ -56,11 +57,11 @@
 
 :0000005
   a owl:Class ;
-  rdfs:subClassOf obo:BFO_0000015 ;
+  rdfs:subClassOf cco:ont00000005 ;
   rdfs:Label "MTG Game Action" @en ;
   skos:prefLabel "Action"@en ;
   skos:altLabel "Game Action"@en ;
-  skos:definition "A game action is a process with at least a player and an object as participants, which has as its output a changed game state."@en ;
+  skos:definition "A game action is an act with at least a player and an object as participants, which has as its output a changed game state."@en ;
   skos:note "(Elucidation) Game actions should include things like casting spells, playing lands, activating abilities, resolving spells or abilities, drawing a card, tapping sources for mana, declaring attackers, and declaring blockers." ;
 .
 
@@ -469,7 +470,7 @@ skos:prefLabel "Color Indicator"@en ;
 
 :0000047
   a owl:Class ;
-  rdfs:subClassOf :0000032 ;
+  rdfs:subClassOf :0000070 ;
   rdfs:label "MTG Keyword Ability"@en ;
   skos:altLabel "Keyword"@en ;
   skos:definition "A keyword ability is an instance of object ability information which consists of one word whose associated role information is defined in the MTG Comprehensive Rulebook."@en ;
@@ -633,6 +634,17 @@ skos:prefLabel "Color Indicator"@en ;
   skos:prefLabel "Deck"@en ;
   skos:note "Notably, decks for different formats have different deckbuilding restrictions." ;
 .
+
+:0000070
+  a owl:Class ;
+  rdfs:subClassOf :0000032 ;
+  rdfs:label "Static Object Ability Information"@en ;
+  skos:altLabel "Ability"@en ;
+  skos:prefLabel "Static Ability" ;
+  skos:definition "An object ability information which has as its content a continuous effect on the game state without putting any objects on the stack."@en ;
+  skos:note "There is a problem here that shows up again, wherein these abilities are merely information that the cards bear, which should correspond to a role or disposition that the object holds in virtue of bearing this information." ;
+.
+
 ##################
 #Object Properties
 ##################
