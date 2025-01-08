@@ -295,6 +295,7 @@ rdfs:subClassOf :0000023 ;
 rdfs:label "MTG Color Indicator"@en ;
 skos:definition "A Color Indicator is an object characteristic whose information content is the color(s) of the object."@en ;
 skos:prefLabel "Color Indicator"@en ;
+skos:note "Color indicators are only present on cards (or sides of cards) which do not have a mana cost." ;
 .
 
 :0000028 
@@ -309,8 +310,9 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000023 ;
   rdfs:label "MTG Card Subtype"@en ;
-  skos:definition "A card subtype is an object characteristic whose information content is..."@en ;
+  skos:definition "A card subtype is an object characteristic which is part of its type line and consists of a single word located to the right of the dash in the type line."@en ;
   skos:prefLabel "Card Subtype"@en ;
+  skos:note "Individual cards may have multiple subtypes." ;
 .
 
 :0000030 
@@ -393,24 +395,29 @@ skos:prefLabel "Color Indicator"@en ;
   a owl:Class ;
   rdfs:subClassOf :0000029 ;
   rdfs:label "MTG Creature Subtype"@en ;
-  skos:definition "A creature type is a card subtype which is a part of an object's type line and which determines whether and how that object can be targeted or affected by spells and abilities."@en ;
+  skos:definition "A subtype which is only part of the type line of objects which have the creature type as a part of their type line."@en ;
   skos:prefLabel "Creature Type"@en ;
+  skos:note "I will not list all of the creature types here." ;
 .
 
 :0000039
   a owl:Class ;
   rdfs:subClassOf :0000029 ;
   rdfs:label "MTG Land Subtype"@en ;
-  skos:definition "A Land type is a card subtype which is part of an object's type line and which determines what color of mana that land can produce in addition to whether and how that object can be targeted or affected by spells and abilities."@en ;
   skos:prefLabel "Land Type"@en ;
+  skos:definition "A subtype which is only part of the type line of objects which have the land type as a part of their type line."@en ;
+  skos:note "The land subtypes are Forest, Mountain, Plains, Island, Swamp, and Wastes." ;
+  skos:note "A land's subtype allows it to tap for mana of a corresponding color." ;
 .
+
 
 :0000040 
   a owl:Class ;
   rdfs:subClassOf :0000029 ;
   rdfs:label "MTG Enchantment Subtype"@en ;
-  skos:prefLabel "Enchantment Type"@en ;
-  skos:definition "An enchantment type is an object characteristic which is part of an object's type line and which determines various game-mechanical functions of the object in addition to whether and how that object can be targeted or affected by spells and abilities."@en ;
+  skos:prefLabel "Enchantment type"@en ;
+  skos:definition "A subtype which is only part of the type line of objects which have the enchantment type as a part of their type line."@en ;
+  skos:note "The enchantment subtypes are Aura, Case, Class, Room, and Saga." ;
 .
 
 :0000041
@@ -418,6 +425,8 @@ skos:prefLabel "Color Indicator"@en ;
   rdfs:subClassOf :0000029 ;
   rdfs:label "MTG Artifact Subtype"@en ;
   skos:prefLabel "Artifact Type"@en ;
+  skos:definition "A subtype which is only part of the type line of objects which have the artifact type as a part of their type line."@en ;
+  skos:note "The artifact subtypes are Attraction, Equipment, Fortification, and Vehicle." ;
 .
 
 :0000042 
@@ -646,6 +655,16 @@ skos:prefLabel "Color Indicator"@en ;
   skos:note "There is a problem here that shows up again, wherein these abilities are merely information that the cards bear, which should correspond to a role or disposition that the object holds in virtue of bearing this information." ;
 .
 
+:0000075
+  a owl:Class ;
+  rdfs:subClassOf :0000029 ;
+  rdfs:label "Spell Subtype"@en ;
+  skos:altLabel "Instant Subtype"@en ;
+  skos:altLabel "Sorcery Subtype"@en ;
+  skos:definition "A subtype which is only part of the type line of objects which have either the Instant or Sorcery type as part of their type line."@en ;
+  skos:note "The spell subtypes are Adventure, Arcane, Lesson, and Trap." ;
+.
+  
 ##################
 #Object Properties
 ##################
