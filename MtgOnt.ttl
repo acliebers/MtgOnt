@@ -655,7 +655,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:note "There is a problem here that shows up again, wherein these abilities are merely information that the cards bear, which should correspond to a role or disposition that the object holds in virtue of bearing this information." ;
 .
 
-:0000075
+:0000071
   a owl:Class ;
   rdfs:subClassOf :0000029 ;
   rdfs:label "Spell Subtype"@en ;
@@ -664,6 +664,18 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:definition "A subtype which is only part of the type line of objects which have either the Instant or Sorcery type as part of their type line."@en ;
   skos:note "The spell subtypes are Adventure, Arcane, Lesson, and Trap." ;
 .
+
+:0000072
+  a owl:Class ;
+  rdfs:subClassOf cco:ont00000958 ;
+  rdfs:label "Type Line"@en ;
+  skos:definition "A type line is an information content entity which is borne by an object and which consists of at least one card type as well as any subertypes and subtypes." ;
+.
+  
+  
+.
+
+
   
 ##################
 #Object Properties
