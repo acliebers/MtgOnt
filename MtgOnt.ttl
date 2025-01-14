@@ -672,11 +672,26 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:definition "A type line is an information content entity which is borne by an object and which consists of at least one card type as well as any subertypes and subtypes." ;
 .
   
-  
+:0000073
+  a owl:Class ;
+  rdfs:subClassOf :0000032 ;
+  rdfs:label "Activated Object Ability Information"@en ;
+  skos:altLabel "Ability"@en ;
+  skos:prefLabel "Activated Ability" ;
+  skos:definition "An object ability information which has as its content the permission to carry out some particular game action."@en ;
+  skos:note "There is a problem here that shows up again, wherein these abilities are merely information that the cards bear, which should correspond to a role or disposition that the object holds in virtue of bearing this information." ;
 .
 
+:0000070
+  a owl:Class ;
+  rdfs:subClassOf :0000032 ;
+  rdfs:label "Triggered Object Ability Information"@en ;
+  skos:altLabel "Ability"@en ;
+  skos:prefLabel "Triggered Ability" ;
+  skos:definition "An object ability information which has as its content a prescription to carry out some particular game action."@en ;
+  skos:note "There is a problem here that shows up again, wherein these abilities are merely information that the cards bear, which should correspond to a role or disposition that the object holds in virtue of bearing this information." ;
+.
 
-  
 ##################
 #Object Properties
 ##################
