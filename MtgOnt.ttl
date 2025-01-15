@@ -704,5 +704,12 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:definition "x controls y =def. x is a player and y is an object located on the battlefield or stack, or an emblem located in the command zone. If y is an object located on the stack, the player who put it on the stack controls it. If y is a permanent on the battlefield, the player who controls it is the one who put it onto the battlefield unless an ability or effect causes some other player to control it. If y is an emblem, the player who put that emblem into the command zone controls it."@en ;
 .
 
+:0010002
+  a owl:objectProperty ;
+  rdfs:label "Targets"@en ;
+  rdfs:domain :0000001 ;
+  rdfs:range [owl:intersectionOf ( :0000001 :0000002 ) ] ;
+  skos:definition "x targets y =def. x is an object and y is an object or a player, and x's controller chose y as its target." ;
+.
 
 
