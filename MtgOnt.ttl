@@ -650,7 +650,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:subClassOf :0000032 ;
   rdfs:label "Static Object Ability Information"@en ;
   skos:altLabel "Ability"@en ;
-  skos:prefLabel "Static Ability" ;
+  skos:prefLabel "Static Ability"@en ;
   skos:definition "An object ability information which has as its content a continuous effect on the game state without putting any objects on the stack."@en ;
   skos:note "There is a problem here that shows up again, wherein these abilities are merely information that the cards bear, which should correspond to a role or disposition that the object holds in virtue of bearing this information." ;
 .
@@ -677,7 +677,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:subClassOf :0000032 ;
   rdfs:label "Activated Object Ability Information"@en ;
   skos:altLabel "Ability"@en ;
-  skos:prefLabel "Activated Ability" ;
+  skos:prefLabel "Activated Ability"@en ;
   skos:definition "An object ability information which has as its content the permission to carry out some particular game action."@en ;
   skos:note "There is a problem here that shows up again, wherein these abilities are merely information that the cards bear, which should correspond to a role or disposition that the object holds in virtue of bearing this information." ;
 .
@@ -687,7 +687,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:subClassOf :0000032 ;
   rdfs:label "Triggered Object Ability Information"@en ;
   skos:altLabel "Ability"@en ;
-  skos:prefLabel "Triggered Ability" ;
+  skos:prefLabel "Triggered Ability"@en ;
   skos:definition "An object ability information which has as its content a prescription to carry out some particular game action."@en ;
   skos:note "There is a problem here that shows up again, wherein these abilities are merely information that the cards bear, which should correspond to a role or disposition that the object holds in virtue of bearing this information." ;
 .
@@ -695,4 +695,14 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 ##################
 #Object Properties
 ##################
+
+:0010001
+  a owl:ObjectProperty ;
+  rdfs:label "Controls"@en ;
+  rdfs:domain :0000002 ;
+  rdfs: range [owl:intersectionOf rdf:type owl:Class :0000001 ;
+  skos:definition "x controls y =def. x is a player and y is an object located on the battlefield or stack, or an emblem located in the command zone. If y is an object located on the stack, the player who put it on the stack controls it. If y is a permanent on the battlefield, the player who controls it is the one who put it onto the battlefield unless an ability or effect causes some other player to control it. If y is an emblem, the player who put that emblem into the command zone controls it."@en ;
+.
+
+
 
