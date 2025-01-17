@@ -12,5 +12,5 @@ However, there is a concern in the offing which is worth considering. As much of
 
  
 # Use of MtgOnt
-As MtgOnt is extended from BFO and CCO (in the sense that all of the highest-level classes of MtgOnt are subclasses of classes asserted in BFO or CCO), it should be implemented only with BFO and CCO imported. A MEREOT containing necessary terms from both ontologies will be added to this repo at some point. 
+As MtgOnt is extended from BFO and CCO (in the sense that all of the highest-level classes of MtgOnt are subclasses of classes asserted in BFO or CCO), it should be implemented only with BFO and CCO imported. A MIREOT containing necessary terms from both ontologies will be added to this repo at some point. 
 
