@@ -686,6 +686,10 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:note "There is a problem here that shows up again, wherein these abilities are merely information that the cards bear, which should correspond to a role or disposition that the object holds in virtue of bearing this information." ;
 .
 
+:0000074 
+  a owl:Class ;
+rdfs:subClassOf 
+
 ##################
 #Object Properties
 ##################
@@ -703,7 +707,27 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:label "Targets"@en ;
   rdfs:domain :0000001 ;
   rdfs:range [owl:intersectionOf ( :0000001 :0000002 ) ] ;
-  skos:definition "x targets y =def. x is an object and y is an object or a player, and x's controller chose y as its target." ;
+  skos:definition "x targets y =def. x is an object and y is an object or a player, and x's controller chose y as its target."@en ;
 .
 
+:0010003
+  a owl:objectProperty ;
+  rdfs:label "Player Attacks"@en ;
+  rdfs:domain :0000002 ;
+  rdfs:range :0000002 ;
+  skos:definition "x attacks y =def. x is a player and y is a player and x declares attackers during x's combat phase and y is the defending player."@en ;
+  skos:note "perhaps this definition should not include the definite description 'the defending player' because in some formats there may be more than one defending player" .
+
+:0010004
+  a owl:objectProperty ;
+  rdfs:label "Creature attacks"@en ;
+  rdfs:domain [rdf:type owl:Class ;
+               owl:intersectionOf ( :0000012 
+                                     [rdf:type owl:Restriction
+                                      owl:onProperty obo:BFO_0000101 ;
+                                      owl:allValuesFrom :0000038 
+                                     ]
+                                   ) ;
+  rdfs:range :0000002;
+  skos:definition "x attacks y =def. x is a creature permanent, y is a player, x's controller declares attackers during their declare attackers step of their combat phase, and y is the defending player"@en . 
 
