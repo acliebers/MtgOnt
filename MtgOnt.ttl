@@ -484,7 +484,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 
 :0000047
   a owl:Class ;
-  rdfs:subClassOf :0000070 ;
+  rdfs:subClassOf :0000032 ;
   rdfs:label "MTG Keyword Ability"@en ;
   skos:altLabel "Keyword"@en ;
   skos:definition "A keyword ability is an instance of object ability information which consists of one word whose associated role information is defined in the MTG Comprehensive Rulebook."@en ;
@@ -688,7 +688,47 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 
 :0000074 
   a owl:Class ;
-rdfs:subClassOf 
+rdfs:subClassOf :0000047 ;
+rdfs:label "Deathtouch"@en ;
+skos:definition "Deathtouch is a keyword ability whose instances grant their bearers a role of being a source of combat damage such that any nonzero amount of combat damage assigned to a creature by that source is lethal damage, regardless of that creature's toughness."@en ;
+.
+
+:0000075
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Defender"@en ;
+  skos:definition "Defender is a keyword ability whose instances grant their bearers a role such that players cannot declare attacks with those bearers."@en ;
+.
+
+:0000076
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Double Strike"@en ;
+  skos:definition "Double Strike is a keyword ability whose instances grant their bearers a role such that when that bearer assigns combat damage, only creatures with double strike or first strike assign combat damage in the combat damage step, and then there is a second combat damage step in which creatures without first strike assign combat damage."@en ;
+  skos:note "This definition is supposed to imply that creatures with double strike (as the name implies and the rules explicitly state) assign combat damage in both the initial and extra assign combat damage step." .
+
+:0000077
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Enchant"@en ;
+  skos:definition "Enchant is a keyword ability whose instances grant their bearers a role such that when that bearer is cast, it must target an object of a certain type."@en ;
+  skos:note "Enchant can only have Auras as bearers." ;
+  skos:note "Do Auras not target when they are returned from the graveyard to the battlefield?" ;
+.
+
+:0000078
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Equip"@en ;
+  skos:definition "Equip is a keyword ability whose instances grant their bearers a role such that their controller can pay a cost during their main phase, when they have priority and there are no objects on the stack, to attach that bearer to a target creature they control."@en ;
+.
+
+:0000079
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "First Strike"@en ;
+  skos:definition "First Strike is a keyword ability whose instances grant their bearers a role such that a role such that when that bearer assigns combat damage, only creatures with double strike or first strike assign combat damage in the combat damage step, and then there is a second combat damage step in which creatures without first strike assign combat damage."@en ;
+.
 
 ##################
 #Object Properties
@@ -716,7 +756,8 @@ rdfs:subClassOf
   rdfs:domain :0000002 ;
   rdfs:range :0000002 ;
   skos:definition "x attacks y =def. x is a player and y is a player and x declares attackers during x's combat phase and y is the defending player."@en ;
-  skos:note "perhaps this definition should not include the definite description 'the defending player' because in some formats there may be more than one defending player" .
+  skos:note "perhaps this definition should not include the definite description 'the defending player' because in some formats there may be more than one defending player" ;
+.
 
 :0010004
   a owl:objectProperty ;
@@ -729,5 +770,6 @@ rdfs:subClassOf
                                      ]
                                    ) ;
   rdfs:range :0000002;
-  skos:definition "x attacks y =def. x is a creature permanent, y is a player, x's controller declares attackers during their declare attackers step of their combat phase, and y is the defending player"@en . 
+  skos:definition "x attacks y =def. x is a creature permanent, y is a player, x's controller declares attackers during their declare attackers step of their combat phase, and y is the defending player"@en ;
+. 
 
