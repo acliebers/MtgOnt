@@ -686,9 +686,10 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 
 :0000074 
   a owl:Class ;
-rdfs:subClassOf :0000047 ;
-rdfs:label "Deathtouch"@en ;
-skos:definition "Deathtouch is a keyword ability whose instances grant their bearers a role of being a source of combat damage such that any nonzero amount of combat damage assigned to a creature by that source is lethal damage, regardless of that creature's toughness."@en ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Deathtouch"@en ;
+  skos:definition "Deathtouch is a keyword ability whose instances grant their bearers a role of being a source of combat damage such that any nonzero amount of combat damage assigned to a creature by that source is lethal damage, regardless of that creature's toughness."@en ;
+  skos:note "CR 702.2" ;
 .
 
 :0000075
@@ -696,6 +697,7 @@ skos:definition "Deathtouch is a keyword ability whose instances grant their bea
   rdfs:subClassOf :0000047 ;
   rdfs:label "Defender"@en ;
   skos:definition "Defender is a keyword ability whose instances grant their bearers a role such that players cannot declare attacks with those bearers."@en ;
+  skos:note "CR 702.3" ;
 .
 
 :0000076
@@ -703,7 +705,9 @@ skos:definition "Deathtouch is a keyword ability whose instances grant their bea
   rdfs:subClassOf :0000047 ;
   rdfs:label "Double Strike"@en ;
   skos:definition "Double Strike is a keyword ability whose instances grant their bearers a role such that when that bearer assigns combat damage, only creatures with double strike or first strike assign combat damage in the combat damage step, and then there is a second combat damage step in which creatures without first strike assign combat damage."@en ;
-  skos:note "This definition is supposed to imply that creatures with double strike (as the name implies and the rules explicitly state) assign combat damage in both the initial and extra assign combat damage step." .
+  skos:note "This definition is supposed to imply that creatures with double strike (as the name implies and the rules explicitly state) assign combat damage in both the initial and extra assign combat damage step." ;
+  skos:note "CR 702.4" ;
+.
 
 :0000077
   a owl:Class ;
@@ -712,6 +716,7 @@ skos:definition "Deathtouch is a keyword ability whose instances grant their bea
   skos:definition "Enchant is a keyword ability whose instances grant their bearers a role such that when that bearer is cast, it must target an object of a certain type."@en ;
   skos:note "Enchant can only have Auras as bearers." ;
   skos:note "Do Auras not target when they are returned from the graveyard to the battlefield?" ;
+  skos:note "CR 702.5" ;
 .
 
 :0000078
@@ -719,15 +724,141 @@ skos:definition "Deathtouch is a keyword ability whose instances grant their bea
   rdfs:subClassOf :0000047 ;
   rdfs:label "Equip"@en ;
   skos:definition "Equip is a keyword ability whose instances grant their bearers a role such that their controller can pay a cost during their main phase, when they have priority and there are no objects on the stack, to attach that bearer to a target creature they control."@en ;
+  skos:note "CR 702.6" ;
 .
 
 :0000079
   a owl:Class ;
   rdfs:subClassOf :0000047 ;
   rdfs:label "First Strike"@en ;
-  skos:definition "First Strike is a keyword ability whose instances grant their bearers a role such that a role such that when that bearer assigns combat damage, only creatures with double strike or first strike assign combat damage in the combat damage step, and then there is a second combat damage step in which creatures without first strike assign combat damage."@en ;
+  skos:definition "First Strike is a keyword ability whose instances grant their bearers a role such that when that bearer assigns combat damage, only creatures with double strike or first strike assign combat damage in the combat damage step, and then there is a second combat damage step in which creatures without first strike assign combat damage."@en ;
+  skos:note "CR 702.7" ;
 .
 
+:0000080
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Flash"@en ;
+  skos:definition "Flash is a keyword ability whose instances grant their bearers a role such that the bearer can be played any time that an instant could be played."@en ;
+  skos:note "CR 702.8" ;
+.
+
+:0000081
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Flying"@en ;
+  skos:definition "Flying is a keyword ability whose instances grant their bearers a role such that the bearer cannot be blocked except by creatures with Flying or Reach."@en ;
+  skos:note "CR 702.9"  ;
+.
+
+:0000082
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Haste"@en ;
+  skos:definition "Haste is a keyword ability whose instances grant their bearers a role such that the bearer can atack even if it hasn't been controlled by its controller continuously since their most recent turn began."@en ;
+  skos:note "CR 702.10" ;
+.
+
+:0000083
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Hexproof"@en ;
+  skos:definition "Hexproof is a keyword ability whose instances grant their bearers a role such that the bearer, if it is a permanent, cannot be the target of spells or abilities controlled by opponents of its controller."@en ;
+  skos:note "CR 702.11" ;
+.
+
+:0000084
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Indestructible"@en ;
+  skos:definition "Indestructible is a keyword ability whose instances grant their bearers a role such that the bearer, if it is a permanent, cannot be destroeyed by lethal damage, and they ignore the state-based action that checks for lethal damage."@en ;
+  skoe:note "CR 702.12 and CR 704.5g" ;
+.
+
+:0000085
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Intimidate"@en ;
+  skos:definition "Intimidate is a keyword ability whose instances grant their bearers a role such that the bearer, if it is a creature, can't be blocked except by artifact creatures or creatures that share a color with it."@en ;
+  skos:note "CR 702.13" ;
+.
+
+:0000086
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Landwalk"@en ;
+  skos:definition "A Landwalk is a keyword ability whose instances specify a class of objects which bear the Land card type and grant their bearers a role such that the bearer, if it is a creature, cannot be blocked if the defending player controls at least one land which is an instance of the specified class."@en ;
+  skos:note "CR 702.14" ;
+  skos:note "concerned about the member of a class/bearer of a quality that concretizes an ICE distinction here" ;
+.
+
+:0000087
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Lifelink"@en ;
+  skos:definition "Lifelink is a keyword ability whose instances grant their bearers a role such that a bearer's controller (or owner, if it has no controller), gains life equal to the damage dealt by the bearer."@en ;
+  skos:note "CR 702.15" ;
+.
+
+:0000088
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Protection"@en ;
+  skos:definition "A Protection is a keyword ability whose instances specify a class of objects and grant their bearers a role such that if the bearer is a permanent, it cannot be targeted, enchanted, equipped, damaged, or blocked by an object which is a member of that class."@en ;
+  skos:note "CR 702.15" ;
+.
+
+:0000089
+  a owl:Class ;
+  rdfs:subClassOf :0000047 b;
+  rdfs:label "Reach"@en ;
+  skos:definition "A Reach is a keyword ability whose instances grant their bearers a role such that a creature which bears a Reach keyword ability can block creatures with flying."@en ;
+  skos:note "CR 702.17" ;
+.
+
+:0000090
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Shroud"@en ;
+  skos:definition "A Shroud is a keyword ability whose instances grant their bearers a role such that a permanent which bears am instance of Shroud cannot be the target of spells or abilities."@en ;l
+  skos:note "CR 702.18" ;
+.
+
+:0000091
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Trample"@en ;
+  skos:definition "A Trample is a keyword ability whose instances grant their bearers a role such that when they attack, after their controller assigns lethal combat damage to the defending player's blockers, any leftover damage is assigned to the defending player."@en ;
+  skos:note "CR 702.19" ;
+.
+
+:0000092 
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Vigilance"@en ;
+  skos:definition "A Vigilance is a keyword ability whose instances grant their bearers a role such that their controller does not tap them when declaring them as an attacker."@en ;
+  skos:note "CR 702.20" ;
+.
+
+:0000093 
+  a owl:Class  ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Ward"@en ;
+  skos:definition "A Ward is a keyword ability whose instances specify a cost and grant their bearers a role such that whenever the bearer, if it is a permanent, becomes the target of a spell or ability controlled by an opponent of the bearer's controller, that spell or ability is countered unless that opponent pays the specified cost."@en ;
+  skos:note "CR 702.21" ;
+.
+
+:0000094
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Banding"@en ;
+  skos:definition "A Banding is a keyword ability whose instances grant their bearers a role such that their controller, when declaring attacks, may declare that one or more attack creatures with banding and up to one attacking cvreature without banding are all 'in a band'."@en ;
+  skos:note "CR 702.22" ;
+  skos:note "Either this needs to be further described or the "In a band" relation will have to be painstakingly defined." ;
+.
+
+
+ 
 ##################
 #Object Properties
 ##################
