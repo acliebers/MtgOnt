@@ -531,8 +531,6 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:definition "A Turn Phase is a process that is an occurrent part of a Turn Process and is either a Beginning Phase, Main Phase, Combat Phase, or Ending Phase."@en ;
   skos:note "CR 500.1" ;
   skos:prefLabel "Phase"@en .
-  
-.
 
 :0000053 
   a owl:Class ;
