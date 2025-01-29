@@ -857,8 +857,206 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:note "Either this needs to be further described or the "In a band" relation will have to be painstakingly defined." ;
 .
 
+:0000095
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Rampage"@en ;
+  skos:definition "A Rampage is a keyword ability whose instances specify a value and grant their bearers a role such that whenever the bearer becomes blocked in combat, it gets gains power and toughness equal to the value specified."@3n ;
+  skos:note "CR 702.23" ;
+.
 
- 
+:0000096
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Cumulative Upkeep"@en ;l
+  skos:definition "A Cumulative Upkeep is a keyword ability whose instances specify a cost and grant their bearers a role such that at the beginning of their upkeep, the controller of the bearer must place an Age counter on the bearer, then pay the specified cost for each age counter on the bearer."@en ;
+  skos:note "CR 702.24" ;
+.
+
+:0000097
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Flanking"@en ;
+  skos:definition "A Flanking is a keeyword ability whose instances specify a cost and grant their bearers a role such that bearer becomes blocked by a creature without flanking, that creature without flanking gets -1 power and toughness until end of turn."@en ;
+  skos:note "CR 702.25" ;
+.
+
+:0000098 
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Phasing"@en ;
+  skos:note "CR 702.26" ;
+.
+
+:0000099
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Buyback"@en ;
+  skos:note "CR 702.27" ;
+.
+
+:0000100
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Shadow"@en ;
+  skos:note "CR 702.28" ;
+.
+
+:0000101
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Cycling"@en ;
+  skos:note "CR 702.29" ;
+.
+
+:0000102
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Echo"@en ;
+  skos:note "CR 702.30" ;
+.
+
+:0000103 
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Horsemanship"@en ;
+  skos:note "CR 702.31" ;
+.
+
+:0000104
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Fading"@en ;
+  skos:note "CR 702.32" ;
+.
+
+:0000105
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Kicker"@en ;
+  skos:note "702.33" ;
+.
+
+:0000106
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Flashback"@en ;
+  skos:note "CR 702.34" ;
+.
+
+:0000107
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Madness"@en ;
+  skos:note "CR 702.35" ;
+.
+
+:0000108
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Fear"@en ;
+  skos:note "CR 702.36" ;
+.
+
+:0000109
+  a owl:Class ;
+  rdfs:subClassOF :0000047 ;
+  rdfs:label "Morph"@en ;
+  skos:note "CR 702.37" ;
+.
+
+:0000110
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Amplify"@en ;
+  skos:note "CR 702.38" ;
+.
+
+:0000111
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Provoke"@en ;
+  skos:note "CR 702.39" ;
+.
+
+:0000112
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Storm"@en ;
+  skos:note "CR 702.40" ;
+.
+
+:0000113
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Affinity"@en ;
+  skos:note "CR 702.41" ;
+.
+
+:0000114
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Entwine"@en ;
+  skos:note "CR 702.42" ;
+.
+
+:0000115
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Modular"@en ;
+  skos:note "CR 702.43" ;
+.
+
+:0000116
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Sunburst"@en ;
+  skos:note "CR 702.44" ;
+.
+
+:0000117
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Bushido"@en ;
+  skos:note "CR 702.45" ;
+.
+
+:0000118
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Soulshift"@en ;
+  skos:note "CR 702.46" ;
+.
+
+:0000119
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Splice"@en ;
+  skos:note "CR 702.47" ;
+.
+
+:0000120
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Offering"@en ;
+  skos:note "CR 702.48" ;
+.
+
+:0000121
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Ninjutsu"@en ;
+  skos:note "CR 702.49" ;
+.
+
+:0000122
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Epic"@en ;
+  skos:note "CR 702.50" ;
+.
+
+
 ##################
 #Object Properties
 ##################
