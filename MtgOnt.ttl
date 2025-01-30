@@ -1056,6 +1056,901 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:note "CR 702.50" ;
 .
 
+:0000123
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Convoke"@en ;
+  skos:note "CR 702.51" ;
+.
+
+:0000124
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Dredge"@en ;
+  skos:note "CR 702.52" ;
+.
+
+:0000125
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Transmute"@en ;
+  skos:note "CR 702.53" ;
+.
+
+:0000126
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Bloodthirst"@en ;
+  skos:note "CR 702.54" ;
+.
+
+:0000127
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Haunt"@en ;
+  skos:note "CR 702.55" ;
+.
+
+:0000128
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Replicate"@en ;
+  skos:note "CR 702.56" ;
+.
+
+:0000129
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Forecast"@en ;
+  skos:note "CR 702.57" ;
+.
+
+:0000130
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Graft"@en ;
+  skos:note "CR 702.58" ;
+.
+
+:0000131
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Recover"@en ;
+  skos:note "CR 702.59" ;
+.
+
+:0000132
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Ripple"@en ;
+  skos:note "CR 702.60" ;
+.
+
+:0000133
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Split Second"@en ;
+  skos:note "CR 702.61" ;
+.
+
+:0000134
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Suspend"@en ;
+  skos:note "CR 702.62" ;
+.
+
+:0000135
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Vanishing"@en ;
+  skos:note "CR 702.63" ;
+.
+
+:0000136
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Absorb"@en ;
+  skos:note "CR 702.64" ;
+.
+
+:0000137
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Aura Swap"@en ;
+  skos:note "CR 702.65" ;
+.
+
+:0000138
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Delve"@en ;
+  skos:note "CR 702.66" ;
+.
+
+:0000139
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Fortify"@en ;
+  skos:note "CR 702.67" ;
+.
+
+:0000140
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Frenzy"@en ;
+  skos:note "CR 702.68" ;
+.
+
+:0000141
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Gravestorm"@en ;
+  skos:note "CR 702.69" ;
+.
+
+:0000142
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Poisonous"@en ;
+  skos:note "CR 702.70" ;
+.
+
+:0000143
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Transfigure"@en ;
+  skos:note "CR 702.71" ;
+.
+
+:0000144
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Champion"@en ;
+  skos:note "CR 702.72" ;
+.
+
+:0000145
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Changeling"@en ;
+  skos:note "CR 702.73" ;
+.
+
+:0000146
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Evoke"@en ;
+  skos:note "CR 702.74" ;
+.
+
+:0000147
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Hideaway"@en ;
+  skos:note "CR 702.75" ;
+.
+
+:0000148
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Prowl"@en ;
+  skos:note "CR 702.76" ;
+.
+
+:0000149
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Reinforce"@en ;
+  skos:note "CR 702.77" ;
+.
+
+:0000150
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Conspire"@en ;
+  skos:note "CR 702.78" ;
+.
+
+:0000151
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Persist"@en ;
+  skos:note "CR 702.79" ;
+.
+
+:0000152
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Wither"@en ;
+  skos:note "CR 702.80" ;
+.
+
+:0000153
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Retrace"@en ;
+  skos:note "CR 702.81" ;
+.
+
+:0000154
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Devour"@en ;
+  skos:note "CR 702.82" ;
+.
+
+:0000155
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Exalted"@en ;
+  skos:note "CR 702.83" ;
+.
+
+:0000156
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Unearth"@en ;
+  skos:note "CR 702.84" ;
+.
+
+:0000157
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Cascade"@en ;
+  skos:note "CR 702.85" ;
+.
+
+:0000158
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Annihilator"@en ;
+  skos:note "CR 702.86" ;
+.
+
+:0000159
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Level Up"@en ;
+  skos:note "CR 702.87" ;
+.
+
+:0000160
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Rebound"@en ;
+  skos:note "CR 702.88" ;
+.
+
+:0000161
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Umbra Armor"@en ;
+  skos:note "CR 702.89" ;
+.
+
+:0000162
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Infect"@en ;
+  skos:note "CR 702.90" ;
+.
+
+:0000163
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Battle Cry"@en ;
+  skos:note "CR 702.91" ;
+.
+
+:0000164
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Living Weapon"@en ;
+  skos:note "CR 702.92" ;
+.
+
+:0000165
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Undying"@en ;
+  skos:note "CR 702.93" ;
+.
+
+:0000166
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Miracle"@en ;
+  skos:note "CR 702.94" ;
+.
+
+:0000167
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Soulbond"@en ;
+  skos:note "CR 702.95" ;
+.
+
+:0000168
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Overload"@en ;
+  skos:note "CR 702.96" ;
+.
+
+:0000169
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Scavenge"@en ;
+  skos:note "CR 702.97" ;
+.
+
+:0000170
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Unleash"@en ;
+  skos:note "CR 702.98" ;
+.
+
+:0000171
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Cipher"@en ;
+  skos:note "CR 702.99" ;
+.
+
+:0000172
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Evolve"@en ;
+  skos:note "CR 702.100" ;
+.
+
+:0000173
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Extort"@en ;
+  skos:note "CR 702.101" ;
+.
+
+:0000174
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Fuse"@en ;
+  skos:note "CR 702.102" ;
+.
+
+:0000175
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Bestow"@en ;
+  skos:note "CR 702.103" ;
+.
+
+:0000176
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Tribute"@en ;
+  skos:note "CR 702.104" ;
+.
+
+:0000177
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Dethrone"@en ;
+  skos:note "CR 702.105" ;
+.
+
+:0000178
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Hidden Agenda"@en ;
+  skos:note "CR 702.106" ;
+.
+
+:0000179
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Outlast"@en ;
+  skos:note "CR 702.107" ;
+.
+
+:0000180
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Prowess"@en ;
+  skos:note "CR 702.108" ;
+.
+
+:0000181
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Dash"@en ;
+  skos:note "CR 702.109" ;
+.
+
+:0000182
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Exploit"@en ;
+  skos:note "CR 702.110" ;
+.
+
+:0000183
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Menace"@en ;
+  skos:note "CR 702.111" ;
+.
+
+:0000184
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Renown"@en ;
+  skos:note "CR 702.112" ;
+.
+
+:0000185
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Awaken"@en ;
+  skos:note "CR 702.113" ;
+.
+
+:0000186
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Devoid"@en ;
+  skos:note "CR 702.114" ;
+.
+
+:0000187
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Ingest"@en ;
+  skos:note "CR 702.115" ;
+.
+
+:0000188
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Myriad"@en ;
+  skos:note "CR 702.116" ;
+.
+
+:0000189
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Surge"@en ;
+  skos:note "CR 702.117" ;
+.
+
+:0000190
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Skulk"@en ;
+  skos:note "CR 702.118" ;
+.
+
+:0000191
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Emerge"@en ;
+  skos:note "CR 702.119" ;
+.
+
+:0000191
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Escalate"@en ;
+  skos:note "CR 702.120" ;
+.
+
+:0000192
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Melee"@en ;
+  skos:note "CR 702.121" ;
+.
+
+:0000193
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Crew"@en ;
+  skos:note "CR 702.122" ;
+.
+
+:0000194
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Fabricate"@en ;
+  skos:note "CR 702.123" ;
+.
+
+:0000195
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Partner"@en ;
+  skos:note "CR 702.124" ;
+.
+
+:0000196
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Undaunted"@en ;
+  skos:note "CR 702.125" ;
+.
+
+:0000197
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Improvise"@en ;
+  skos:note "CR 702.126" ;
+.
+
+:0000198
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Aftermath"@en ;
+  skos:note "CR 702.127" ;
+.
+
+:0000199
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Embalm"@en ;
+  skos:note "CR 702.128" ;
+.
+
+:0000200
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Eternalize"@en ;
+  skos:note "CR 702.129" ;
+.
+
+:0000201
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Afflict"@en ;
+  skos:note "CR 702.130" ;
+.
+
+:0000202
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Ascend"@en ;
+  skos:note "CR 702.131" ;
+.
+
+:0000203
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Assist"@en ;
+  skos:note "CR 702.132" ;
+.
+
+:0000204
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Jump-start"@en ;
+  skos:note "CR 702.133" ;
+.
+
+:0000205
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Mentor"@en ;
+  skos:note "CR 702.134" ;
+.
+
+:0000206
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Aferlife"@en ;
+  skos:note "CR 702.135" ;
+.
+
+:0000207
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Riot"@en ;
+  skos:note "CR 702.136" ;
+.
+
+:0000208
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Spectacle"@en ;
+  skos:note "CR 702.137" ;
+.
+
+:0000209
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Escape"@en ;
+  skos:note "CR 702.138" ;
+.
+
+:0000210
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Companion"@en ;
+  skos:note "CR 702.139" ;
+.
+
+:0000211
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Mutate"@en ;
+  skos:note "CR 702.140" ;
+.
+
+:0000212
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Encore"@en ;
+  skos:note "CR 702.141" ;
+.
+
+:0000213
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Boast"@en ;
+  skos:note "CR 702.142" ;
+.
+
+
+:0000214
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Foretell"@en ;
+  skos:note "CR 702.143" ;
+.
+
+:0000215
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Demonstrate"@en ;
+  skos:note "CR 702.144" ;
+.
+
+:0000216
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Daybound"@en ;
+  skos:note "CR 702.145" ;
+.
+
+:0000217
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Nightbound"@en ;
+  skos:note "CR 702.145" ;
+.
+
+:0000218
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Disturb"@en ;
+  skos:note "CR 702.146" ;
+.
+
+:0000219
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Decayed"@en ;
+  skos:note "CR 702.147" ;
+.
+
+:0000220
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Cleave"@en ;
+  skos:note "CR 702.148" ;
+.
+
+
+:0000221
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Training"@en ;
+  skos:note "CR 702.149" ;
+.
+
+:0000222
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Compleated"@en ;
+  skos:note "CR 702.150" ;
+.
+
+:0000223
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Reconfigure"@en ;
+  skos:note "CR 702.151" ;
+.
+
+:0000224
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Blitz"@en ;
+  skos:note "CR 702.152" ;
+.
+
+:0000225
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Casualty"@en ;
+  skos:note "CR 702.153" ;
+.
+
+:0000226
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Enlist"@en ;
+  skos:note "CR 702.154" ;
+.
+
+:0000227
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Read Ahead"@en ;
+  skos:note "CR 702.155" ;
+.
+
+:0000228
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Ravenous"@en ;
+  skos:note "CR 702.156" ;
+.
+
+:0000229
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Squad"@en ;
+  skos:note "CR 702.157" ;
+.
+
+:0000230
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Space Sculptor"@en ;
+  skos:note "CR 702.158" ;
+.
+
+:0000231
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Visit"@en ;
+  skos:note "CR 702.159" ;
+.
+
+:0000232
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Prototype"@en ;
+  skos:note "CR 702.160" ;
+.
+
+:0000233
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Living Metal"@en ;
+  skos:note "CR 702.161" ;
+.
+
+:0000234
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "More than Meets the Eye"@en ;
+  skos:note "CR 702.162" ;
+.
+
+:0000235
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "For Mirrodin!"@en ;
+  skos:note "CR 702.163" ;
+.
+
+:0000236
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Toxic"@en ;
+  skos:note "CR 702.164" ;
+.
+
+:0000237
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Backup"@en ;
+  skos:note "CR 702.165" ;
+.
+
+:0000238
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Bargain"@en ;
+  skos:note "CR 702.166" ;
+.
+
+:0000239
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Craft"@en ;
+  skos:note "CR 702.167" ;
+.
+
+:0000240
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Disguise"@en ;
+  skos:note "CR 702.168" ;
+.
+
+:0000241
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Solved"@en ;
+  skos:note "CR 702.169" ;
+.
+
+:0000242
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Plot"@en ;
+  skos:note "CR 702.170" ;
+.
+
+:0000243
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Saddle"@en ;
+  skos:note "CR 702.171" ;
+.
+
+:0000244
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Spree"@en ;
+  skos:note "CR 702.172" ;
+.
+
+:0000244
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Freerunning"@en ;
+  skos:note "CR 702.173" ;
+.
+
+:0000245
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Gift"@en ;
+  skos:note "CR 702.174" ;
+.
+
+:0000246
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Offspring"@en ;
+  skos:note "CR 702.175" ;
+.
+
+:0000247
+  a owl:Class ;
+  rdfs:subClassOf :0000047 ;
+  rdfs:label "Impending"@en ;
+  skos:note "CR 702.176" ;
+.
+
+
+
+
+
 
 ##################
 #Object Properties
