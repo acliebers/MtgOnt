@@ -1,4 +1,4 @@
- @prefix : <https://githgub.com/acliebers/MtgOnt/>  . #Need to add a prefix for this namespace after setting up the namespace.
+@prefix : <https://githgub.com/acliebers/MtgOnt/>  . #Need to add a prefix for this namespace after setting up the namespace.
 @prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -224,7 +224,7 @@ skos:note "During a game, emblems exist in the command zone (CR 114.2). This is 
   rdfs:label "MTG Command Zone"@en ;
   skos:definition "The command zone is a zone reserved for certain specialized objects that have an overarching effect on the game, yet are not permanents and cannot be destroyed."@en ;
   skos:prefLabel "Command Zone"@en ;
-  skos:altLabel "Command" @en ;
+  skos:altLabel "Command"@en ;
   skos:note "CR 408" ;
   skos:note "The definition of this term may need to be tinkered with." ;
 .
