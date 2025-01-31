@@ -15,8 +15,11 @@ However, there is a concern in the offing which is worth considering. As much of
 As MtgOnt is extended from BFO and CCO (in the sense that all of the highest-level classes of MtgOnt are subclasses of classes asserted in BFO or CCO), it should be implemented only with BFO and CCO imported. A MIREOT containing necessary terms from both ontologies will be added to this repo at some point. 
 
 MtgOnt is intended to be used to:
-     (1) Structure information about individual Magic: the Gathering cards
-     (2) Support symbolic reasoning about games of Magic: the Gathering
-     (3) Structure information about decks and strategies in the various formats of Magic: the Gathering 
+
+(1) Structure information about individual Magic: the Gathering cards
+
+(2) Support symbolic reasoning about games of Magic: the Gathering
+
+(3) Structure information about decks and strategies in the various formats of Magic: the Gathering 
      
 
