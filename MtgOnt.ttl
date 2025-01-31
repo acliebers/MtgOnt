@@ -2077,7 +2077,8 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
                                  owl:onProperty obo:BFO_0000101 ;
                                 owl:someValuesFrom :0000249
                               ]
-                            ) ;
+                            ) 
+             ];
   skos:definition "x attacks y =def. x is a player and y is a player or a planeswalker controlled by a player who is not identical to x or battle whose protector is not identical to x and x declares attackers during x's combat phase and y is the defending player, planeswalker, or battle."@en ;
   skos:note "perhaps this definition should not include the definite description 'the defending player' because in some formats there may be more than one defending player" ;
 .
