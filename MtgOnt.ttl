@@ -2055,7 +2055,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   a owl:objectProperty ;
   rdfs:label "Targets"@en ;
   rdfs:domain :0000001 ;
-  rdfs:range [owl:intersectionOf ( :0000001 :0000002 ) ] ;
+  rdfs:range [owl:unionOf ( :0000001 :0000002 ) ] ;
   skos:definition "x targets y =def. x is an object and y is an object or a player, and x's controller chose y as its target."@en ;
 .
 
