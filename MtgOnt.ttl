@@ -2047,7 +2047,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   a owl:ObjectProperty ;
   rdfs:label "Controls"@en ;
   rdfs:domain :0000002 ;
-  rdfs: range :0000001 ;
+  rdfs:range :0000001 ;
   skos:definition "x controls y =def. x is a player and y is an object located on the battlefield or stack, or an emblem located in the command zone. If y is an object located on the stack, the player who put it on the stack controls it. If y is a permanent on the battlefield, the player who controls it is the one who put it onto the battlefield unless an ability or effect causes some other player to control it. If y is an emblem, the player who put that emblem into the command zone controls it."@en ;
 .
 
@@ -2063,17 +2063,17 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   a owl:objectProperty ;
   rdfs:label "Player Attacks"@en ;
   rdfs:domain :0000002 ;
-  rdfs:range [rdf:type owl:Class ;
-              owl:unionOf ( :0000002
-                            [  rdf:type owl:Restriction ;
-                             owl:onProperty obo:BFO_0000101 ;
-                             owl:someValuesFrom :0000042
-                            ]
-                            [  rdf:type owl:Restriction ;
-                               owl:onProperty obo:BFO_0000101 ;
-                              owl:someValuesFrom :0000249
-                            ]
-                          ) ;
+  rdfs:range [  rdf:type owl:Class ;
+                owl:unionOf ( :0000002
+                              [  rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000101 ;
+                                 owl:someValuesFrom :0000042
+                              ]
+                              [  rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000101 ;
+                                owl:someValuesFrom :0000249
+                              ]
+                            ) ;
   skos:definition "x attacks y =def. x is a player and y is a player or a planeswalker controlled by a player who is not identical to x or battle whose protector is not identical to x and x declares attackers during x's combat phase and y is the defending player, planeswalker, or battle."@en ;
   skos:note "perhaps this definition should not include the definite description 'the defending player' because in some formats there may be more than one defending player" ;
 .
