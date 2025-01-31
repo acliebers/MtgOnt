@@ -9,6 +9,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <https://githgub.com/acliebers/MtgOnt/> . #Once again, must create a namespace as the base of the ontology
 
+<https:github.com/acliebers/MtgOnt/> rdf:type owl:Ontology ;
+                                                            rdfs:comment "This ontology is designed to represent information related to Magic: the Gathering."@en ;
+                                                            rdfs:label "Magic: the Gathering Ontology"@en ;
+                                                            .
+  
 
 
 
@@ -323,12 +328,12 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 .
 
 :0000031 
-   a owl:Class ;
+  a owl:Class ;
   owl:disjointWith :0000045 ;
   rdfs:subClassOf :0000023 ,
     [rdf:type owl:Restriction ;
               owl:onProperty obo:BFO_0000176 ;
-              owl:SomeValuesFrom :0000044
+              owl:someValuesFrom :0000044
     ] ;
   rdfs:label "MTG Object Rules Text"@en ;
   skos:definition "Rules text is an object characteristic which is part of an object's text box and which has game-mechanical effect(s)."@en ;
@@ -340,7 +345,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:subClassOf cco:ont00000958 ,
     [rdf:type owl:Restriction ;
               owl:onProperty obo:BFO_0000176 ;
-              owl:AllValuesFrom :0000031
+              owl:allValuesFrom :0000031
     ] ;
   rdfs:label "MTG Object Ability Information"@en ;
   skos:definition "Object ability information is an information content entity which is some portion of its rules text, delineated from other portions of its rules text by a paragraph break."@en ;
@@ -460,7 +465,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:subClassOf cco:ont00000958 ,
           [rdf:type owl:Restriction ;
               owl:onProperty obo:BFO_0000176 ;
-              owl:SomeValuesFrom :0000044
+              owl:someValuesFrom :0000044
     ] ;
   rdfs:label "MTG Flavor Text"@en ;
   skos:definition "Flavor text is an information content entity whose content is italicized text which serves merely to add artistic appeal to the game."@en ;
