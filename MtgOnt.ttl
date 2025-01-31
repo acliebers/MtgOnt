@@ -853,7 +853,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:label "Banding"@en ;
   skos:definition "A Banding is a keyword ability whose instances grant their bearers a role such that their controller, when declaring attacks, may declare that one or more attack creatures with banding and up to one attacking cvreature without banding are all 'in a band'."@en ;
   skos:note "CR 702.22" ;
-  skos:note "Either this needs to be further described or the "In a band" relation will have to be painstakingly defined." ;
+  skos:note "Either this needs to be further described or the 'In a band' relation will have to be painstakingly defined." ;
 .
 
 :0000095
