@@ -771,7 +771,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:subClassOf :0000047 ;
   rdfs:label "Indestructible"@en ;
   skos:definition "Indestructible is a keyword ability whose instances grant their bearers a role such that the bearer, if it is a permanent, cannot be destroeyed by lethal damage, and they ignore the state-based action that checks for lethal damage."@en ;
-  skoe:note "CR 702.12 and CR 704.5g" ;
+  skos:note "CR 702.12 and CR 704.5g" ;
 .
 
 :0000085
