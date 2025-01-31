@@ -867,7 +867,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 :0000096
   a owl:Class ;
   rdfs:subClassOf :0000047 ;
-  rdfs:label "Cumulative Upkeep"@en ;l
+  rdfs:label "Cumulative Upkeep"@en ;
   skos:definition "A Cumulative Upkeep is a keyword ability whose instances specify a cost and grant their bearers a role such that at the beginning of their upkeep, the controller of the bearer must place an Age counter on the bearer, then pay the specified cost for each age counter on the bearer."@en ;
   skos:note "CR 702.24" ;
 .
