@@ -1947,7 +1947,95 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:note "CR 702.176" ;
 .
 
+:0000248
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Artifact"@en ;
+.
 
+:0000249
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Battle"@en ;
+.
+
+:0000250
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Conspiracy"@en ;
+.
+
+:000251
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Creature"@en ;
+.
+
+:0000252
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Dungeon"@en ;
+.
+
+:0000253
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Enchantment"@en ;
+.
+
+:0000254
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Instant"@en ;
+.
+
+:0000255
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Kindred"@en ;
+.
+
+:0000256
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Land"@en ;
+.
+
+:0000257
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Phenomenon"@en ;
+.
+
+:0000258
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Plane"@en ;
+.
+
+:0000259
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Planeswalker"@en ;
+.
+
+:0000260
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Scheme"@en ;
+.
+
+:0000261
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Sorcery"@en ;
+.
+
+:0000262
+  a owl:Class ;
+  rdfs:subClassOf :0000028 ;
+  rdfs:label "Vanguard"@en ;
+.
 
 
 
@@ -1976,8 +2064,18 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   a owl:objectProperty ;
   rdfs:label "Player Attacks"@en ;
   rdfs:domain :0000002 ;
-  rdfs:range :0000002 ;
-  skos:definition "x attacks y =def. x is a player and y is a player and x declares attackers during x's combat phase and y is the defending player."@en ;
+  rdfs:range [rdf:type owl:Class ;
+              owl:unionOf ( :0000002
+                            [  rdf:type owl:Restriction ;
+                             owl:onProperty obo:BFO_0000101 ;
+                             owl:someValuesFrom :0000042
+                            ]
+                            [  rdf:type owl:Restriction ;
+                               owl:onProperty obo:BFO_0000101 ;
+                              owl:someValuesFrom :0000249
+                            ]
+                          ) ;
+  skos:definition "x attacks y =def. x is a player and y is a player or a planeswalker controlled by a player who is not identical to x or battle whose protector is not identical to x and x declares attackers during x's combat phase and y is the defending player, planeswalker, or battle."@en ;
   skos:note "perhaps this definition should not include the definite description 'the defending player' because in some formats there may be more than one defending player" ;
 .
 
@@ -1986,12 +2084,22 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:label "Creature attacks"@en ;
   rdfs:domain [rdf:type owl:Class ;
                owl:intersectionOf ( :0000012 
-                                     [rdf:type owl:Restriction
+                                     [rdf:type owl:Restriction ;
                                       owl:onProperty obo:BFO_0000101 ;
                                       owl:allValuesFrom :0000038 
                                      ]
                                    ) ;
-  rdfs:range :0000002;
-  skos:definition "x attacks y =def. x is a creature permanent, y is a player, x's controller declares attackers during their declare attackers step of their combat phase, and y is the defending player"@en ;
+  rdfs:range [rdf:type owl:Class ;
+              owl:unionOf ( :0000002
+                            [  rdf:type owl:Restriction ;
+                             owl:onProperty obo:BFO_0000101 ;
+                             owl:someValuesFrom :0000042
+                            ]
+                            [  rdf:type owl:Restriction ;
+                               owl:onProperty obo:BFO_0000101 ;
+                              owl:someValuesFrom :0000249
+                            ]
+                          ) ;
+  skos:definition "x attacks y =def. x is a creature permanent, y is a player or a planeswalker or a battle, x's controller declares attackers during their declare attackers step of their combat phase, and y is the defending player or planeswalker or battle"@en ;
 . 
 
