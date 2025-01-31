@@ -809,7 +809,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 
 :0000089
   a owl:Class ;
-  rdfs:subClassOf :0000047 b;
+  rdfs:subClassOf :0000047 ;
   rdfs:label "Reach"@en ;
   skos:definition "A Reach is a keyword ability whose instances grant their bearers a role such that a creature which bears a Reach keyword ability can block creatures with flying."@en ;
   skos:note "CR 702.17" ;
