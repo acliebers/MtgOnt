@@ -57,7 +57,7 @@
 :0000005
   a owl:Class ;
   rdfs:subClassOf cco:ont00000005 ;
-  rdfs:Label "MTG Game Action" @en ;
+  rdfs:Label "MTG Game Action"@en ;
   skos:prefLabel "Event"@en ;
   skos:altLabel "Game Action"@en ;
   skos:altLabel "Game Event"@en ;
