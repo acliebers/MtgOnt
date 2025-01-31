@@ -819,7 +819,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   a owl:Class ;
   rdfs:subClassOf :0000047 ;
   rdfs:label "Shroud"@en ;
-  skos:definition "A Shroud is a keyword ability whose instances grant their bearers a role such that a permanent which bears am instance of Shroud cannot be the target of spells or abilities."@en ;l
+  skos:definition "A Shroud is a keyword ability whose instances grant their bearers a role such that a permanent which bears am instance of Shroud cannot be the target of spells or abilities."@en ;
   skos:note "CR 702.18" ;
 .
 
