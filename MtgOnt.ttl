@@ -18,11 +18,10 @@
 
 :0000001 
   a owl:Class ;
-  rdfs:subClassOf obo:BFO_0000004 ;
+  rdfs:subClassOf cco:ont00000253 ;
   rdfs:label "MTG Object"@en ;
   skos:prefLabel "Object"@en ;
-  skos:definition "An MTG object is an independent continuant which is either an ability on the stack, a card, a copy of a card, a token, a spell, a permanent, or an emblem."@en ;
-  skos:note "This class is, of necessity, a defined class." ;
+  skos:definition "An MTG object is an information bearing entity which is either an ability on the stack, a card, a copy of a card, a token, a spell, a permanent, or an emblem."@en ;
   skos:note "CR 109.1" ;
 .
 
