@@ -2093,11 +2093,11 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
               owl:unionOf ( :0000002
                             [  rdf:type owl:Restriction ;
                              owl:onProperty obo:BFO_0000101 ;
-                             owl:someValuesFrom :0000042
+                             owl:allValuesFrom :0000042
                             ]
                             [  rdf:type owl:Restriction ;
                                owl:onProperty obo:BFO_0000101 ;
-                              owl:someValuesFrom :0000249
+                              owl:allValuesFrom :0000249
                             ]
                           ) ;
   skos:definition "x attacks y =def. x is a creature permanent, y is a player or a planeswalker or a battle, x's controller declares attackers during their declare attackers step of their combat phase, and y is the defending player or planeswalker or battle"@en ;
