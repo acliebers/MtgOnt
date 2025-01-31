@@ -959,7 +959,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 
 :0000109
   a owl:Class ;
-  rdfs:subClassOF :0000047 ;
+  rdfs:subClassOf :0000047 ;
   rdfs:label "Morph"@en ;
   skos:note "CR 702.37" ;
 .
