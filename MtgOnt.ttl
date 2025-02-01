@@ -10,6 +10,7 @@
 @base <https://githgub.com/acliebers/MtgOnt/> . #Once again, must create a namespace as the base of the ontology
 
 <https:github.com/acliebers/MtgOnt/> rdf:type owl:Ontology ;
+                                                            owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl> ;
                                                             rdfs:comment "This ontology is designed to represent information related to Magic: the Gathering."@en ;
                                                             rdfs:label "Magic: the Gathering Ontology"@en ;
                                                             .
