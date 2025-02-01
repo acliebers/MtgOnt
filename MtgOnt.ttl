@@ -144,7 +144,7 @@
   a owl:Class ;
   rdfs:subClassOf :0000001 ,
     [rdf:type owl:Restriction ;
-              owl:onProperty obo:RO_0001025 ;
+              owl:onProperty obo:BFO_0000171 ;
               owl:allValuesFrom :0000016
     ] ;
   rdfs:label "MTG Permanent"@en ;
@@ -157,7 +157,7 @@
   a owl:Class ;
 rdfs:subClassOf :0000001 ,
     [rdf:type owl:Restriction ;
-              owl:onProperty obo:RO_0001025 ;
+              owl:onProperty obo:BFO_0000171 ;
               owl:allValuesFrom :0000020
     ] ,
     [rdf:type owl:Restriction ;
@@ -166,7 +166,7 @@ rdfs:subClassOf :0000001 ,
     ] ;
 rdfs:label "MTG Emblem" ;
 skos:definition "An Emblem is an object that has one or more abilities, but no other characteristics."@en ;
-skos:prefLabel "Emblem"@em ;
+skos:prefLabel "Emblem"@en ;
 skos:note "CR 114.1" ;
 skos:note "During a game, emblems exist in the command zone (CR 114.2). This is why the first class restriction exists." ;
 .
@@ -538,7 +538,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   a owl:Class ;
   rdfs:subClassOf obo:BFO_0000015 ,
           [rdf:type owl:Restriction ;
-              owl:onProperty obo:RO_0002012 ;
+              owl:onProperty obo:BFO_0000132 ;
               owl:allValuesFrom :0000006 
     ] ;
   rdfs:label "MTG Turn Phase"@en ;
