@@ -92,9 +92,9 @@
   a owl:Class ;
   owl:disjointWith :0000010 ;
   rdfs:subClassOf :0000001 ,
-    [rdf:type owl:Restriction ;
-              owl:onProperty obo:BFO_0000101 ;
-              owl:allValuesFrom :0000263 
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000101 ;
+       owl:allValuesFrom :0000263 
     ] ;
   rdfs:label "MTG Card"@en ;
   skos:definition "A card is an object which bears name, mana cost, illustration, color indicator, type line, expansion symbol, text box, power and toughness, loyalty, defense, hand modifier, life modifier, illustration credit, legal text, and collector number information."@en ;
@@ -459,7 +459,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 
 :0000044
   a owl:Class ;
-  rdfs:subClassOf cco:ont00000958 ;
+  rdfs:subClassOf cco:ont00000958 ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000176 ;
        owl:allValuesFrom :0000263
@@ -476,7 +476,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
           [rdf:type owl:Restriction ;
               owl:onProperty obo:BFO_0000176 ;
               owl:someValuesFrom :0000044
-    ] ;
+          ] ;
   rdfs:label "MTG Flavor Text"@en ;
   skos:definition "Flavor text is an information content entity whose content is italicized text which serves merely to add artistic appeal to the game."@en ;
   skos:prefLabel "Flavor Text"@en ;
@@ -489,7 +489,7 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
           [rdf:type owl:Restriction ;
               owl:onProperty obo:BFO_0000176 ;
               owl:someValuesFrom :0000044
-    ] ;
+          ] ;
   rdfs:label "MTG Reminder Text"@en ;
   skos:definition "Reminder text is an information content entity whose content is italicized text which serves as a reminder for what certain keywords and other technical Magic-related terms mean."@en ;
   skos:prefLabel "Reminder Text"@en ;
