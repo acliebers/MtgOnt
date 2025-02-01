@@ -1968,91 +1968,91 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 :0000248
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Artifact"@en ;
+  rdfs:label "Artifact Card Type"@en ;
 .
 
 :0000249
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Battle"@en ;
+  rdfs:label "Battle Card Type"@en ;
 .
 
 :0000250
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Conspiracy"@en ;
+  rdfs:label "Conspiracy Card Type"@en ;
 .
 
 :000251
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Creature"@en ;
+  rdfs:label "Creature Card Type"@en ;
 .
 
 :0000252
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Dungeon"@en ;
+  rdfs:label "Dungeon Card Type"@en ;
 .
 
 :0000253
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Enchantment"@en ;
+  rdfs:label "Enchantment Card Type"@en ;
 .
 
 :0000254
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Instant"@en ;
+  rdfs:label "Instant Card Type"@en ;
 .
 
 :0000255
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Kindred"@en ;
+  rdfs:label "Kindred Card Type"@en ;
 .
 
 :0000256
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Land"@en ;
+  rdfs:label "Land Card Type"@en ;
 .
 
 :0000257
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Phenomenon"@en ;
+  rdfs:label "Phenomenon Card Type"@en ;
 .
 
 :0000258
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Plane"@en ;
+  rdfs:label "Plane Card Type"@en ;
 .
 
 :0000259
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Planeswalker"@en ;
+  rdfs:label "Planeswalker Card Type"@en ;
 .
 
 :0000260
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Scheme"@en ;
+  rdfs:label "Scheme Card Type"@en ;
 .
 
 :0000261
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Sorcery"@en ;
+  rdfs:label "Sorcery Card Type"@en ;
 .
 
 :0000262
   a owl:Class ;
   rdfs:subClassOf :0000028 ;
-  rdfs:label "Vanguard"@en ;
+  rdfs:label "Vanguard Card Type"@en ;
 .
 
 :0000263
@@ -2208,6 +2208,19 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:subClassOf :0000263 ;
   rdfs:label "Vanguard Face"@en ;
 .
+
+:0000278
+   a owl:Class ;
+   rdfs:subClassOf cco:ont00000958 ,
+                   [  rdf:type owl:Restriction ;
+                      owl:onProperty obo:BFO_0000176 ;
+                      owl:allValuesFrom :0000263
+                   ] ;
+  rdfs:label "MTG Card Frame"@en ;
+  skos:definition "An information content entity that is part of a card face, which structures other information content entities that are part of a card face, and which indicates some role(s) that the card   "@en ;
+.
+
+
 
 ##################
 #Object Properties
