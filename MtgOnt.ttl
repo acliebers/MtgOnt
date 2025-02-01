@@ -2108,6 +2108,105 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:note "Faces should be able to have every object characteristic as well as things like illustration, legal text, etc. as parts." ;
 .
 
+:0000264
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Artifact Face"@en ;
+.
+
+:0000265
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Battle Face"@en ;
+.
+
+:0000266
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Conspiracy Face"@en ;
+.
+:0000267
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ,
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+       owl:allValuesFrom [  rdf:type :0000071 ;
+                            [  rdf:type owl:Restriction ;
+                               owl:onProperty obo:BFO_0000178 ;
+                               owl:allValuesFrom :000251
+                            ] 
+                         ]
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+       owl:allValuesFrom :0000033
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+       owl:allValuesFrom :0000034
+    ] ;
+  rdfs:label "Creature Face"@en ;
+.
+
+:0000268
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Dungeon Face"@en ;
+.
+
+:0000269
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Enchantment Face"@en ;
+.
+
+:0000270
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Instant Face"@en ;
+.
+
+:0000271
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Land Face"@en ;
+.
+
+:0000272
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Phenomenon Face"@en ;
+.
+
+:0000273
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Plane Face"@en ;
+.
+
+:0000274
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Planeswalker Face"@en ;
+.
+
+:0000275
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Scheme Face"@en ;
+.
+
+:0000276
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Sorcery Face"@en ;
+.
+
+:0000277
+  a owl:Class ;
+  rdfs:subClassOf :0000263 ;
+  rdfs:label "Vanguard Face"@en ;
+.
 
 ##################
 #Object Properties
