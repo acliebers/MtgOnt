@@ -7,6 +7,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://githgub.com/acliebers/MtgOnt/> . #Once again, must create a namespace as the base of the ontology
 
 <https:github.com/acliebers/MtgOnt/> rdf:type owl:Ontology ;
