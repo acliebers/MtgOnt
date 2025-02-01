@@ -92,8 +92,8 @@
   owl:disjointWith :0000010 ;
   rdfs:subClassOf :0000001 ,
     [rdf:type owl:Restriction ;
-              owl:onProperty obo:RO_0010002 ;
-              owl:someValuesFrom :0000023
+              owl:onProperty obo:BFO_0000101> ;
+              owl:allValuesFrom :0000263 ;
     ] ;
   rdfs:label "MTG Card"@en ;
   skos:definition "A card is an object which bears name, mana cost, illustration, color indicator, type line, expansion symbol, text box, power and toughness, loyalty, defense, hand modifier, life modifier, illustration credit, legal text, and collector number information."@en ;
@@ -102,6 +102,7 @@
   skos:note "CR 200.1" ;
   skos:note "This is a problematic definition, enumerating the different kinds of information that can be borne by cards and making it sound as though all cards carry all of these. In particular, very few cards bear hand and life modifier information, because only specialized cards for a single format use those. Also, a card has to be more than simply some object which bears this information. We should not allow things like human beings who memorize card information to count as cards because they bear the information." ;
   skos:note "The class restriction should eventually express in detail the characteristics and other ICEs that cards must bear vs the characteristics (and other ICEs?) which cards may bear." ;
+  skos:note "As of 1/31/2025, should rework this definition and think about patterns involving card faces and the different kinds of card faces that there are."@en ;
 .
 
 :0000009
@@ -255,7 +256,11 @@ skos:note "During a game, emblems exist in the command zone (CR 114.2). This is 
 
 :0000023 
   a owl:Class ;
-  rdfs:subClassOf cco:ont00000958 ; 
+  rdfs:subClassOf cco:ont00000958 ,
+    [  rdf:type owl:Restriction ;
+       owl:onProperty  obo:BFO_0000176 ;
+       owl:allValuesFrom :0000263
+    ] ;
   rdfs:label "MTG Object Characteristic" ;
   skos:definition "A characteristic is any one of the following Information Content Entities that can be borne by an MTG object: name, mana cost, color, color indicator, card type, subtype, supertype, rules text, abilities, power, toughness, loyalty, defense, hand modifier, and life modifier."@en ;
   skos:altLabel "Object Characteristic"@en ;
@@ -454,6 +459,10 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 :0000044
   a owl:Class ;
   rdfs:subClassOf cco:ont00000958 ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000176 ;
+       owl:allValuesFrom :0000263
+    ] ;
   rdfs:label "MTG Text Box"@en ;
   skos:definition "A text box is an information content entity whose content is the sum of any rules text or flavor text on an object."@en ;
   skos:prefLabel "Text Box"@en ;
@@ -663,7 +672,11 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
 
 :0000071
   a owl:Class ;
-  rdfs:subClassOf cco:ont00000958 ;
+  rdfs:subClassOf cco:ont00000958 ,
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000176 ;
+       owl:allValuesFrom :0000263 
+    ] ;
   rdfs:label "Type Line"@en ;
   skos:definition "A type line is an information content entity which is borne by an object and which consists of at least one card type as well as any subertypes and subtypes." ;
 .
@@ -2041,7 +2054,58 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:label "Vanguard"@en ;
 .
 
-
+:0000263
+  a owl:Class ;
+  rdfs:subClassOf cco:ont00000958 ,
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000084 ;
+      owl:allValuesFrom :0000008
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+        owl:allValuesFrom :0000024 
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+        owl:allValuesFrom :0000044 
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+        owl:allValuesFrom :0000048 
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+        owl:allValuesFrom :0000049 
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+        owl:allValuesFrom  :0000050
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+        owl:allValuesFrom :0000051
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+        owl:someValuesFrom :0000025
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+        owl:someValuesFrom :0000026
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+        owl:someValuesFrom :0000027
+    ] ;
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+        owl:someValuesFrom :0000028
+    ] ;
+  rdfs:label "MTG Face Information Content Entity"@en ;
+  skos:definition "An information content entity that is composed of the object characteristics of a card and generically depends upon that card."@en ;
+  skos:note "this is actually incredibly important for modeling MDFCs, transformations, etc." ;
+  skos:note "Faces should be able to have every object characteristic as well as things like illustration, legal text, etc. as parts." ;
+.
 
 
 ##################
