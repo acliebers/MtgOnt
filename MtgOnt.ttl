@@ -2061,43 +2061,43 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000084 ;
       owl:allValuesFrom :0000008
-    ] ;
+    ] ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
         owl:allValuesFrom :0000024 
-    ] ;
+    ] ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
         owl:allValuesFrom :0000044 
-    ] ;
+    ] ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
         owl:allValuesFrom :0000048 
-    ] ;
+    ] ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
         owl:allValuesFrom :0000049 
-    ] ;
+    ] ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
         owl:allValuesFrom  :0000050
-    ] ;
+    ] ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
         owl:allValuesFrom :0000051
-    ] ;
+    ] ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
         owl:someValuesFrom :0000025
-    ] ;
+    ] ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
         owl:someValuesFrom :0000026
-    ] ;
+    ] ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
         owl:someValuesFrom :0000027
-    ] ;
+    ] ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
         owl:someValuesFrom :0000028
