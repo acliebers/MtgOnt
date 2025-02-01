@@ -2130,11 +2130,12 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   rdfs:subClassOf :0000263 ,
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
-       owl:allValuesFrom [  rdf:type :0000071 ;
-                            [  rdf:type owl:Restriction ;
-                               owl:onProperty obo:BFO_0000178 ;
-                               owl:allValuesFrom :000251
-                            ] 
+       owl:allValuesFrom [  owl:intersectionOf (  :0000071 
+                                                  [  rdf:type owl:Restriction ;
+                                                      owl:onProperty obo:BFO_0000178 ;
+                                                      owl:allValuesFrom :000251
+                                                  ]
+                                                )
                          ]
     ] ;
     [  rdf:type owl:Restriction ;
