@@ -2219,6 +2219,21 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
                    ] ;
   rdfs:label "MTG Card Frame"@en ;
   skos:definition "An information content entity that is part of a card face, which structures other information content entities that are part of a card face, and which indicates some role(s) that the card   "@en ;
+  skos:prefLabel "Frame"@en ;
+.
+
+:0000279
+  a owl:Class ;
+  rdfs:subClassOf :0000278 ;
+  rdfs:label "Default Card Frame"@en ;
+  skos:definition "A card frame that is used as the default for some temporal interval."@en ;
+.
+
+:0000280
+  a owl:Class ;
+  rdfs:subClassOf :0000278 ;
+  rdfs:label "Game-Mechanical Card Frame"@en ;
+  skos:definition "A card frame which encodes information reflecting a card's game-mechanical role(s) beyond what is encoded in a default frame."@en ;
 .
 
 
