@@ -10,10 +10,11 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://githgub.com/acliebers/MtgOnt/> . #Once again, must create a namespace as the base of the ontology
 
-<https:github.com/acliebers/MtgOnt/> rdf:type owl:Ontology ;
+<https://github.com/acliebers/MtgOnt/> rdf:type owl:Ontology ;
                                                             owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl> ;
                                                             rdfs:comment "This ontology is designed to represent information related to Magic: the Gathering."@en ;
                                                             rdfs:label "Magic: the Gathering Ontology"@en ;
+                                                            dcterms:creator "Austin Liebers"@en ;
                                                             .
   
 
@@ -54,7 +55,11 @@
 
 :0000004
   a owl:Class ;
-  rdfs:subClassOf obo:BFO_0000015 ;
+  rdfs:subClassOf obo:BFO_0000015 ,
+  rdfs:subClassOf [rdf:type owl:Restriction ;
+                   owl:onProperty obo:BFO_0000117 ;
+                   owl:allValuesFrom :0000006 
+                  ] ;
   rdfs:Label "MTG Game"@en ;
   skos:prefLabel "Game"@en ;
   skos:definition "A MTG game is a process that consists of players taking turns until a player(s) wins the game."@en ;
@@ -2102,6 +2107,10 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
     [  rdf:type owl:Restriction ;
        owl:onProperty obo:BFO_0000178 ;
        owl:someValuesFrom :0000028
+    ] ,
+    [  rdf:type owl:Restriction ;
+       owl:onProperty obo:BFO_0000178 ;
+       owl:allValuesFrom :0000278
     ] ;
   rdfs:label "MTG Face Information Content Entity"@en ;
   skos:definition "An information content entity that is composed of the object characteristics of a card and generically depends upon that card."@en ;
@@ -2113,18 +2122,21 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Artifact Face"@en ;
+  skos:definition "A face ICE of an Artifact."@en ;
 .
 
 :0000265
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Battle Face"@en ;
+  skos:definition "A face ICE of a Battle."@en ;
 .
 
 :0000266
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Conspiracy Face"@en ;
+  skos:definition "A face ICE of a Conspiracy."@en ;
 .
 :0000267
   a owl:Class ;
@@ -2148,66 +2160,77 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
        owl:allValuesFrom :0000034
     ] ;
   rdfs:label "Creature Face"@en ;
+  skos:definition "A face ICE of a Creature"@en ;
 .
 
 :0000268
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Dungeon Face"@en ;
+  skos:definition "A face ICE of a Dungeon"@en ;
 .
 
 :0000269
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Enchantment Face"@en ;
+  skos:definition "A face ICE of an Enchantment"@en ;
 .
 
 :0000270
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Instant Face"@en ;
+  skos:definition "A face ICE of an Instant"@en ;
 .
 
 :0000271
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Land Face"@en ;
+  skos:definition "A face ICE of a Land."@en ;
 .
 
 :0000272
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Phenomenon Face"@en ;
+  skos:definition "A face ICE of a Phenomenon."@en ;
 .
 
 :0000273
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Plane Face"@en ;
+  skos:definition "A face ICE of a Plane"@en ;
 .
 
 :0000274
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Planeswalker Face"@en ;
+  skos:definition "A face ICE of a Planeswalker."@en ;
 .
 
 :0000275
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Scheme Face"@en ;
+  skos:definition "A face ICE of a Scheme."@en ;
 .
 
 :0000276
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Sorcery Face"@en ;
+  skos:definition "A face ICE of a sorcery"@en ;
 .
 
 :0000277
   a owl:Class ;
   rdfs:subClassOf :0000263 ;
   rdfs:label "Vanguard Face"@en ;
+  skos:definition "A face ICE of a Vanguard."@en ;
 .
 
 :0000278
@@ -2236,7 +2259,9 @@ skos:note "Color indicators are only present on cards (or sides of cards) which 
   skos:definition "A card frame which encodes information reflecting a card's game-mechanical role(s) beyond what is encoded in a default frame."@en ;
 .
 
-
+:0000280 
+  a owl:Class ;
+  rdfs:subClassOf 
 
 ##################
 #Object Properties
