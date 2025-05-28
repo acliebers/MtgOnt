@@ -1,0 +1,97 @@
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+###  https://github.com/acliebers/MtgOntSlim
+<https://github.com/acliebers/MtgOntSlim> a owl:Ontology ;
+                                          rdfs:label "MtgOnt Slim"@en ;
+                                          skos:definition "A slim file of CCO terms which are necessary imports to MtgOnt."@en ;
+                                          dcterms:creator "Austin Liebers"@en ;
+.
+
+
+###  https://www.commoncoreontologies.org/ont00000253
+cco:ont00000253 rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000030
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty obo:BFO_0000101 ;
+                                                              owl:someValuesFrom cco:ont00000958
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf obo:BFO_0000030 ;
+                 rdfs:label "Information Bearing Entity"@en ;
+                 skos:altLabel "IBE"@en ;
+                 skos:definition "An Object upon which an Information Content Entity generically depends."@en ;
+                 cco:ont00001754 "http://purl.obolibrary.org/obo/IAO_0000178"^^xsd:anyURI ;
+                 cco:ont00001760 "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001017
+cco:ont00001017 rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000040
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty obo:BFO_0000196 ;
+                                                              owl:someValuesFrom cco:ont00001379
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf obo:BFO_0000040 ;
+                 rdfs:label "Agent"@en ;
+                 skos:definition "A Material Entity that bears an Agent Capability."@en ;
+                 cco:ont00001754 "Schlosser, Markus, \"Agency\", The Stanford Encyclopedia of Philosophy (Winter 2019 Edition), Edward N. Zalta (ed.), available at: https://plato.stanford.edu/archives/win2019/entries/agency/"@en ;
+                 cco:ont00001760 "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000005
+cco:ont00000005 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:BFO_0000015 ;
+                 rdfs:label "Act"@en ;
+                 skos:definition "A Process in which at least one Agent plays a causative role."@en ;
+                 cco:ont00001760 "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
+
+###  https://www.commoncoreontologies.org/ont00000958
+cco:ont00000958 rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000031
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty cco:ont00001808 ;
+                                                              owl:someValuesFrom obo:BFO_0000001
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf obo:BFO_0000031 ;
+                 rdfs:label "Information Content Entity"@en ;
+                 skos:altLabel "ICE"@en ;
+                 skos:definition "A Generically Dependent Continuant that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."@en ;
+                 skos:scopeNote "Information Content Entity is here intended to be a class of Entities whose instances are the informational content of Information Bearing Entities. For example, three instances of information bearers -- such as a bar chart, color-coded map, and a written report -- each of which lists the GDP of Countries for the year 2010 are each different carriers of the same information content. It is this content that is generically dependent upon its carrier. This treatment of Informational Content Entity (cf. the Information Artifact Ontology) leads to a principle of subtyping based upon the relationship that ICE's have with the Entity they are about rather than characteristics such as format, language, measurement scale, or media. The latter are treated here as being Qualities of bearers."@en ;
+                 cco:ont00001754 "http://purl.obolibrary.org/obo/IAO_0000030" ;
+                 cco:ont00001760 "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001379
+cco:ont00001379 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:BFO_0000017 ;
+                 rdfs:label "Agent Capability"@en ;
+                 skos:definition "A Realizable Entity that inheres in a Material Entity in virtue of that Material Entity's capacity to realize it in some Planned Act."@en ;
+                 cco:ont00001754 "Schlosser, Markus, \"Agency\", The Stanford Encyclopedia of Philosophy (Winter 2019 Edition), Edward N. Zalta (ed.), available at: https://plato.stanford.edu/archives/win2019/entries/agency/"@en ;
+                 cco:ont00001760 "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+###  https://www.commoncoreontologies.org/ont00001808
+cco:ont00001808 rdf:type owl:ObjectProperty ;
+                 rdfs:domain cco:ont00000958 ;
+                 rdfs:range obo:BFO_0000001 ;
+                 rdfs:label "is about"@en ;
+                 skos:definition "A primitive relationship between an Information Content Entity and some Entity."@en ;
+                 cco:ont00001754 "http://purl.obolibrary.org/obo/IAO_0000136" ;
+                 cco:ont00001760 "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
